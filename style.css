@@ -83,3 +83,9 @@ color: #ff0000;
 .bg-ted-red {
   background-color: #ff0000;
 }
+
+@media  only screen and (min-width: 768px){
+  .md\:w-100 {
+    width: 29rem;
+  }
+}

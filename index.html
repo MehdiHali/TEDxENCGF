@@ -1,8 +1,6 @@
 <!--TODO-->
-<!--start mobile on md not lg-->
-<!--remove the snap on md and sm-->
-<!--how to remove the scrollbar-->
-<!--how to swap right section to leftand vice versa -->
+<!--gsap csroll anim-->
+<!--scroll snap the body ?-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,16 +8,16 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TEDxEncgf-Endless Stories</title>
+    <title>TEDxEncgf - Ideas worth spreading</title>
   </head>
-<body class="h-screen md:px-32 scroll-snap">
+<body class="h-screen lg:px-32 scroll-snap">
 
         <section class=" section h-screen bg-white">
           <div id="app"></div>
           <script type="module" src="/main.js"></script>
-          <header style="height: 15%;" class="flex items-center justify-between">
-            <img class="w-44 py-4 px-4 md:px-0" alt="logo" src="./public/assets/LOGO.png">
-            <nav class="hidden list-none space-x-12  md:flex">
+          <header style="height: 15%;" class="flex items-center justify-between z-50">
+            <img class="w-44 py-4 px-4 md:px-0 z-50" alt="logo" src="./public/assets/LOGO.png">
+            <nav class="hidden list-none space-x-12  md:flex z-50">
               <a class=" text-ted-red" href="#">Home</a>
               <a class="hover-text-ted-red" href="#">Edition</a>
               <a class="hover-text-ted-red" href="#">Partners</a>
@@ -27,10 +25,11 @@
               <a class="hover-text-ted-red" href="#">About</a>
             </nav>
             <section class="hover-ted-text flex items-center space-x-4">
-              <a class="hover-text-ted-red" href="#">Contact</a>
+              <a class="hover-text-ted-red z-10" href="#">Contact</a>
               <img class="cursor-pointer md:hidden " alt="menu button" src="./public/assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg">
             </section>
           </header>
+          
           <main style="height: 85%;" class="flex flex-col md:space-x-8 md:flex-row">
 
             <div  class="md:w-11/12  order-2 md:order-1  md:block w-full overflow-hidden">
@@ -41,11 +40,23 @@
               
             </div>
 
-            <div  class="order-1 md:order-2  w-full ">
-              <h1 style="line-height: 120%;" class="text-5xl md:text-6xl pl-4 pb-8">Ideas <br> Worth <br><strong style="letter-spacing: 8px;" class="text-ted-red inter-bold">Spreading</strong></h1>
-              <div class=" bg-ted-red p-2 md:p-3 flex justify-center  items-center">
-                <video class=""  controls>
+            <div  class="order-1 md:order-2  w-full relative overflow-x-clip ">
+
+                <svg class="absolute right-6 md:right-10 -top-80  md:-top-80 z-0 " xmlns="http://www.w3.org/2000/svg" width="700" height="800" fill="none" viewBox="0 0 1635 1380">
+                  <path fill="#F7DC64" fill-opacity=".3" d="M1344 574v48l-818.5 757.5H0V0h568l776 574Z"/>
+                  <path stroke="red" stroke-linejoin="round" stroke-width="12" d="M1385 595c82 0 133-34 205 15 76.56 52.106 92 261-478 737"/>
+                  <path fill="#F7DC64" d="M1343.87 580.001v32.511h16.1v-32.511h-16.1Z"/>
+                  <path fill="red" d="m1358.69 575.171 1.54 42.197 13.29-.485-1.54-42.197-13.29.485Zm14.97 7.031 1.01 27.551 8.68-.317-1.01-27.55-8.68.316Zm11.18 24.028-.92-20.27s16.56 6.405.92 20.27Z"/>
+                  <path fill="#F7DC64" d="M1348.16 619.171c11.45-19.836 4.66-45.202-15.18-56.655-19.84-11.452-45.2-4.656-56.65 15.181-11.46 19.837-4.66 45.202 15.18 56.655 19.83 11.453 45.2 4.656 56.65-15.181Z"/>
+                </svg>
+
+
+
+              <h1 id="ted_slogan" style="line-height: 70%;" class="overflow-hidden text-4xl md:text-5xl pl-4 pb-6 z-50"><div id="ideas">Ideas</div> <br> <div id="worth">Worth </div><br><div id="spreading" style="letter-spacing: 8px;" class="text-ted-red inter-bold">Spreading</div></h1>
+              <div class=" bg-ted-red p-2 md:p-3 flex justify-center  items-center z-50 ">
+                <video poster="./public/assets/video-thumbnail.png" width="5000px" class="cursor-pointer z-50"  controls>
                   <source src="./public/assets/videos/9convert.com - How to keep human bias out of AI  Kriti Sharma_480p.mp4" type="video/mp4">
+                  
                   sorry!, your browser does not support videos
                 </video>
               </div>
