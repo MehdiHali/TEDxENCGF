@@ -1,0 +1,64 @@
+<!--TODO-->
+<!--start mobile on md not lg-->
+<!--remove the snap on md and sm-->
+<!--how to remove the scrollbar-->
+<!--how to swap right section to leftand vice versa -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEDxEncgf-Endless Stories</title>
+  </head>
+<body class="h-screen md:px-32 scroll-snap">
+
+        <section class=" section h-screen bg-white">
+          <div id="app"></div>
+          <script type="module" src="/main.js"></script>
+          <header style="height: 15%;" class="flex items-center justify-between">
+            <img class="w-44 py-4 px-4 md:px-0" alt="logo" src="./public/assets/LOGO.png">
+            <nav class="hidden list-none space-x-12  md:flex">
+              <a class=" text-ted-red" href="#">Home</a>
+              <a class="hover-text-ted-red" href="#">Edition</a>
+              <a class="hover-text-ted-red" href="#">Partners</a>
+              <a class="hover-text-ted-red" href="#">Team</a>
+              <a class="hover-text-ted-red" href="#">About</a>
+            </nav>
+            <section class="hover-ted-text flex items-center space-x-4">
+              <a class="hover-text-ted-red" href="#">Contact</a>
+              <img class="cursor-pointer md:hidden " alt="menu button" src="./public/assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg">
+            </section>
+          </header>
+          <main style="height: 85%;" class="flex flex-col md:space-x-8 md:flex-row">
+
+            <div  class="md:w-11/12  order-2 md:order-1  md:block w-full overflow-hidden">
+              <img class="opacity-30 bg-white w-screen" alt="islamic pattern" src="./public/assets/islamic-pattern2.svg">
+              <img class="opacity-30 bg-white w-screen" alt="islamic pattern" src="./public/assets/islamic-pattern2.svg">
+              <img class="opacity-30 bg-white w-screen" alt="islamic pattern" src="./public/assets/islamic-pattern2.svg">
+              <img class="opacity-30 bg-white w-screen" alt="islamic pattern" src="./public/assets/islamic-pattern2.svg">
+              
+            </div>
+
+            <div  class="order-1 md:order-2  w-full ">
+              <h1 style="line-height: 120%;" class="text-5xl md:text-6xl pl-4 pb-8">Ideas <br> Worth <br><strong style="letter-spacing: 8px;" class="text-ted-red inter-bold">Spreading</strong></h1>
+              <div class=" bg-ted-red p-2 md:p-3 flex justify-center  items-center">
+                <video class=""  controls>
+                  <source src="./public/assets/videos/9convert.com - How to keep human bias out of AI  Kriti Sharma_480p.mp4" type="video/mp4">
+                  sorry!, your browser does not support videos
+                </video>
+              </div>
+            </div>
+          </main>
+          <button class="absolute text-sm bottom-5 left-1/2 hidden md:block z-50 bg-slate-300 shadow-lg px-2 py-1 rounded-lg">
+            Scroll Down
+          </button>
+        </section>
+        <section id="section2" class="section h-screen bg-green-400">Secion 2</section>
+        <section class="section h-screen bg-cyan-400">Secion 3</section>
+        <section class="section h-screen bg-purple-400">Secion 4</section>
+        <section class="section h-40 bg-orange-400">Secion 4</section>
+        
+  </body>
+</html>

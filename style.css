@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: inter-regular;
+  src: url('./public/assets/fonts/Inter/static/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: inter-bold;
+  src: url('./public/assets/fonts/Inter/static/Inter-Bold.ttf');
+}
+
+
+@font-face {
+  font-family: inter-black;
+  src: url('./public/assets/fonts/Inter/static/Inter-Black.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inter-regular;
+}
+
+body{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+}
+
+
+.scroll-snap {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+}
+
+.section {
+  scroll-snap-align: start;
+}
+
+.menu-item {
+  @apply cursor-pointer hover:border-b-4 hover:border-b-red-500 p-2
+  
+}
+
+.
+.active{
+  @apply border-b-4 border-b-red-500
+}
+
+.bg-mosaic {
+}
+main::-webkit-scrollbar{
+  scrollbar-width: 0;
+}
+main::-webkit-scrollbar-thumb {
+  scrollbar-width: 0;
+}
+
+.inter-black {
+  font-family: 'inter-black';
+}
+
+.inter-bold {
+  font-family: inter-bold;
+}
+
+.text-ted-red {
+color: #ff0000;
+}
+
+
+.hover-text-ted-red:hover {
+color: #ff0000;
+}
+
+.bg-ted-red {
+  background-color: #ff0000;
+}
