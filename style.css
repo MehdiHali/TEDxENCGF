@@ -8,6 +8,11 @@
 }
 
 @font-face {
+  font-family: jomhuria;
+  src: url('./public/assets/fonts/Jomhuria/Jomhuria-Regular.ttf');
+}
+
+@font-face {
   font-family: inter-bold;
   src: url('./public/assets/fonts/Inter/static/Inter-Bold.ttf');
 }
@@ -32,6 +37,9 @@ body{
     scrollbar-width: 0;
 }
 
+.text-jomhuria {
+  font-family: 'jomhuria';
+}
 
 .scroll-snap {
     height: 100vh;
@@ -88,4 +96,10 @@ color: #ff0000;
   .md\:w-100 {
     width: 29rem;
   }
+}
+
+@media (min-width: 1024px) {
+    .lg\:w-11\/13 {
+        width: 80.666667%;
+    }
 }
