@@ -41,11 +41,14 @@ body{
   font-family: 'jomhuria';
 }
 
+@media only screen and (min-width: 1024px){
+
 .scroll-snap {
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     scrollbar-width: 0;
+}
 }
 
 .section {
@@ -57,19 +60,11 @@ body{
   
 }
 
-.
+
 .active{
   @apply border-b-4 border-b-red-500
 }
 
-.bg-mosaic {
-}
-main::-webkit-scrollbar{
-  scrollbar-width: 0;
-}
-main::-webkit-scrollbar-thumb {
-  scrollbar-width: 0;
-}
 
 .inter-black {
   font-family: 'inter-black';
@@ -102,4 +97,15 @@ color: #ff0000;
     .lg\:w-11\/13 {
         width: 80.666667%;
     }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar-chrome::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar-firefox {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
