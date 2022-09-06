@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./index.html",
+    "./team.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {

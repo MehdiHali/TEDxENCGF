@@ -78,6 +78,10 @@ body{
 color: #ff0000;
 }
 
+.hover\:bg-ted-red:hover {
+  background-color: #ff0000;
+}
+
 
 .hover-text-ted-red:hover {
 color: #ff0000;
