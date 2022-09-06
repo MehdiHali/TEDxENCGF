@@ -4,23 +4,23 @@
 
 @font-face {
   font-family: inter-regular;
-  src: url('./public/assets/fonts/Inter/static/Inter-Regular.ttf');
+  src: url('./assets/fonts/Inter/static/Inter-Regular.ttf');
 }
 
 @font-face {
   font-family: jomhuria;
-  src: url('./public/assets/fonts/Jomhuria/Jomhuria-Regular.ttf');
+  src: url('./assets/fonts/Jomhuria/Jomhuria-Regular.ttf');
 }
 
 @font-face {
   font-family: inter-bold;
-  src: url('./public/assets/fonts/Inter/static/Inter-Bold.ttf');
+  src: url('./assets/fonts/Inter/static/Inter-Bold.ttf');
 }
 
 
 @font-face {
   font-family: inter-black;
-  src: url('./public/assets/fonts/Inter/static/Inter-Black.ttf');
+  src: url('./assets/fonts/Inter/static/Inter-Black.ttf');
 }
 
 * {

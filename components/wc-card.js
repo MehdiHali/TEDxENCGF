@@ -10,8 +10,8 @@ return  el.hasAttribute(attr)?el.getAttribute(attr):def
 constructor(){
     super();
     this.innerHTML = `
-            <li style="background-color: black; width: 13rem; height: 18rem" class=" relative h-72 w-52 ">
-              <img   style="height: 80%;" class=" w-full object-cover " src="${this.hasAttribute("src")?this.getAttribute('src'):"public/assets/team/person.svg"}" alt="">
+            <li style="background-color: black; " class=" relative h-72 w-52 ">
+              <img   style="height: 80%;" class=" w-full object-cover " src="${this.hasAttribute("src")?this.getAttribute('src'):"/assets/team/person.svg"}" alt="">
               <div style="bottom: 0;  " class="absolute bottom-0 left-0  w-full ">
                     <p style="padding-bottom: 0px; height: 4rem; background-color:rgba(0, 0, 0, 0.3);" class=" text-white  inter-black text-lg px-2" > ${wcGetAttr(this,"lastName","Last Name")} <br> ${this.hasAttribute('firstName')?this.getAttribute("firstName"):"First Name"} </p>
 

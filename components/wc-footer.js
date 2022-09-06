@@ -1,6 +1,4 @@
-
-
-export default class wcFooter extends HTMLElement {
+class wcFooter extends HTMLElement {
     constructor(){
         super();
         this.innerHTML = `
@@ -28,7 +26,7 @@ export default class wcFooter extends HTMLElement {
           <!-- DIV 2 -->
 <div class="flex flex-col items-center space-y-4 p-4 w-full">
           <div>
-            <img class="w-44" src="public/assets/LOGO.png" alt="">
+            <img class="w-44" src="/assets/LOGO.png" alt="">
           </div>
 
   <div class="flex items-center">
@@ -61,9 +59,14 @@ export default class wcFooter extends HTMLElement {
     <li class="underline"><a href="/team.html">Team</a></li>
     <li class="underline"><a href="#">Contact</a></li>
   </ul>
+  <p>&copy ${new Date().getFullYear()} <a class="text-ted-red" href="/">TEDxENCGF</a> - All rights reserved.
   <p>Developed with
-<svg class=" inline-flex scale-50 m-0 " xmlns="http://www.w3.org/2000/svg" height="48" width="48" fill="red"><path  d="m24 41.95-2.05-1.85q-5.3-4.85-8.75-8.375-3.45-3.525-5.5-6.3T4.825 20.4Q4 18.15 4 15.85q0-4.5 3.025-7.525Q10.05 5.3 14.5 5.3q2.85 0 5.275 1.35Q22.2 8 24 10.55q2.1-2.7 4.45-3.975T33.5 5.3q4.45 0 7.475 3.025Q44 11.35 44 15.85q0 2.3-.825 4.55T40.3 25.425q-2.05 2.775-5.5 6.3T26.05 40.1ZM24 38q5.05-4.65 8.325-7.975 3.275-3.325 5.2-5.825 1.925-2.5 2.7-4.45.775-1.95.775-3.9 0-3.3-2.1-5.425T33.5 8.3q-2.55 0-4.75 1.575T25.2 14.3h-2.45q-1.3-2.8-3.5-4.4-2.2-1.6-4.75-1.6-3.3 0-5.4 2.125Q7 12.55 7 15.85q0 1.95.775 3.925.775 1.975 2.7 4.5Q12.4 26.8 15.7 30.1 19 33.4 24 38Zm0-14.85Z"/></svg>
+<svg class="inline-flex" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 143 131">
+  <path fill="#ff0000" d="m71.5 131-10.367-9.423C24.31 88.237 0 66.178 0 39.264 0 17.204 17.303 0 39.325 0 51.766 0 63.706 5.783 71.5 14.849 79.293 5.783 91.234 0 103.675 0 125.697 0 143 17.205 143 39.264c0 26.914-24.31 48.974-61.132 82.313L71.5 131Z"/>
+</svg>
+
    by <a href="#" class="underline">Mehdi Ouled-hali</a> </p>
+   
 </div>
           </footer>
         `
