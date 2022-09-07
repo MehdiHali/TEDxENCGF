@@ -5,13 +5,14 @@ class wcFooter extends HTMLElement {
           <footer style="max-width: 98vw;" class="flex flex-col items-center lg:flex-row justify-between lg:h-72 overflow-hidden w-screen bg-gray-100 lg:w-screen" >
             <!-- DIV 1 -->
           <div style="width: 30rem;min-width: 30rem;" class="flex text-center  relative mb-32 ">
-            <div class="w-52 ml-8 flex-col text-center ">
+            <div class="w-52 ml-8 flex-col text-center z-10 ">
 
             <svg class=" w-36  mx-auto" xmlns="http://www.w3.org/2000/svg" width="310" height="94" fill="none" viewBox="0 0 310 94">
 <path fill="#FF2B06" d="M25.252 24.227H0V.181h78.235v24.046H52.996V94H25.252V24.227ZM82.55.18h75.947v24.047H110.31V35.92h48.187v22.346H110.31v11.689h48.2V94H82.55V.18Zm108.377 69.774h10.856c17.293 0 19.821-14.588 19.821-23.403 0-5.901-1.776-22.324-21.843-22.324h-8.834v45.727ZM163.166.18h45.556c30.029 0 40.642 23.128 40.642 46.772C249.364 75.737 234.726 94 203.3 94h-40.134V.18Zm126.086 57.666-8.465-14.623-8.259 14.623h-20.34l19.309-29.564L252.904 0h20.346l7.537 13.979L288.537 0h20.34L290.29 28.282l19.309 29.564h-20.347Z"/>
             </svg>
             <p>
               This independent TEDx event is operated under license from TED.
+              <br> <a class="text-ted-red underline" href="https://www.ted.com/tedx" target="_blank" >Learn More</a>
             </p>
             </div>
 

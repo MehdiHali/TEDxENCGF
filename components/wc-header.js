@@ -1,4 +1,4 @@
-
+import gsap from "gsap";
 class wcHeader extends HTMLElement {
 constructor(){
     super();
@@ -25,11 +25,10 @@ constructor(){
                     <img class="w-40 mb-10" src="/assets/LOGO.png" alt="">
 
                     <a class="bg-ted-red w-full p-4 text-center text-white" href="/"> <li >Home</li></a>
-                     <a class="hover:bg-ted-red hover:text-white  w-full p-4 text-center text-ted-red" href="/"><li >Edition</li></a>
-                   <a class="hover:bg-ted-red hover:text-white  w-full p-4 text-center text-ted-red" href="/partners.html"><li >Partners</li> </a>
-
-                 <a class="hover:bg-ted-red hover:text-white  w-full p-4 text-center text-ted-red" href="/team.html"><li >Team</li></a>
-                 <a class="hover:bg-ted-red hover:text-white  w-full p-4 text-center text-ted-red" href="/about.html"><li >About</li></a>
+                    <a class="hover:bg-ted-red hover:text-white  w-full p-4 text-center text-black" href="/"><li >Edition</li></a>
+                    <a class="hover:bg-ted-red hover:text-white  w-full p-4 text-center text-black" href="/partners.html"><li >Partners</li> </a>
+                    <a class="hover:bg-ted-red hover:text-white  w-full p-4 text-center text-black" href="/team.html"><li >Team</li></a>
+                    <a class="hover:bg-ted-red hover:text-white  w-full p-4 text-center text-black" href="/about.html"><li >About</li></a>
 
               </ul>
               <img id="drop_menu_btn" class="cursor-pointer lg:hidden z-10 " alt="menu button" src="./assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg">
@@ -55,7 +54,4 @@ menu_btn.addEventListener("click",()=>{
 drop_menu_close_btn.addEventListener("click",()=>{
   drop_menu.classList.add("hidden")
 })
-
-
-
 

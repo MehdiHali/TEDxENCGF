@@ -1,0 +1,117 @@
+<!-- TODO -->
+<!-- change illustration -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/BIG X.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The official website of the TEDxENCGF, an independent TEDx event that is operated under licence from TED and takes place in Fes, Morocco.">
+    <title>TEDxENCGF - Ideas worth spreading</title>
+    <script type="module" src="/components/wc-header.js"></script>
+    <script type="module" src="/components/wc-footer.js"></script>
+    <script type="module" src="/components/wc-card.js"></script>
+    <script type="module" src="/components/wc-card-2.js"></script>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/partner.js"></script>
+    <script type="module" src="/src/headline.js"></script>
+  </head>
+<body class="h-screen  bg-white lg:overflow-scroll">
+        <div id="app">
+        <section  id="section-1" class="  lg:h-screen xl:px-32  overflow-hidden">
+          <wc-header></wc-header>
+          <main style="height: 80vh; background-image: url(/assets/BGs/partners.png);background-position: center;background-size: cover;" class="w-full  lg:h-full  relative grid content-center mb-10">
+            <div class=" text-7xl lg:text-9xl text-center font-bold  text-white z-10 w-full flex flex-wrap justify-center space-x-4" > <div id="headline_1">Our</div> <div id="headline_2">Partners</div></div>
+            <svg id="team_arrow_down" style="bottom: 1rem; right: 46%" class="absolute animate-bounce" fill="white" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 44 10 30l2.1-2.1 10.4 10.4V4h3v34.3l10.4-10.4L38 30Z"/></svg>
+          </main>
+        </section>
+
+        <section class="flex flex-col items-center bg-gray-100">
+          <h1 class="w-full text-center text-2xl text-ted-red p-4  "></h1>
+          <p   class="p-6 pb-10 text-center  lg:w-1/2 ">
+          We are thankful to have the trust of many sponsors who have believed in and supported us in order to make this inaugural event a reality. Thank you so much for your support and for believing in Fassi Youths’ potential.
+          </p>
+        </section>
+        <section class="xl:px-32 p-8">
+          <h1 style="color: rgb(47, 47, 47);" class="text-4xl inter-bold border-b-2 border-b-red-500  pb-4 mx-auto text-center w-fit ">Corporate Partners</h1>
+          <ul class="flex flex-wrap justify-center p-8 py-20">
+            <li class="p-4 flex flex-col items-center ">
+              <h2  class="text-4xl text-gray-600  inter-black border-b-2 border-b-gray-600">Silver</h2>
+              <img class="w-72 h-28  object-cover p-4" src="assets/partners/inwi-logo-png-1.webp" alt="">
+              <span>Inwi</span>
+
+            </li>
+            <li class="p-4 flex flex-col items-center ">
+              <h2  class="text-4xl text-yellow-600  inter-black border-b-2 border-b-yellow-600">Golden</h2>
+              <img class="w-72 p-4" src="assets/CIH-Bank-logo-2014.webp" alt="">
+              <span>Cih Bank</span>
+            </li>
+            <li class="p-4 flex flex-col items-center ">
+              <h2  class="text-4xl text-amber-900 inter-black border-b-2 border-b-amber-900">Bronze</h2>
+              <img class="w-72 p-4" src="assets/partners/cars.png" alt="">
+              <span>Cih Bank</span>
+              <!-- <div class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 34 33">
+                  <path fill="gold" d="m17.047.594 3.883 12.302h12.565L23.329 20.5l3.883 12.302-10.165-7.603L6.88 32.801l3.883-12.302L.598 12.896h12.566L17.047.594Z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 34 33">
+                  <path fill="gold" d="m17.047.594 3.883 12.302h12.565L23.329 20.5l3.883 12.302-10.165-7.603L6.88 32.801l3.883-12.302L.598 12.896h12.566L17.047.594Z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 34 33">
+                  <path fill="gold" d="m17.047.594 3.883 12.302h12.565L23.329 20.5l3.883 12.302-10.165-7.603L6.88 32.801l3.883-12.302L.598 12.896h12.566L17.047.594Z"/>
+                </svg>
+              </div> -->
+
+            </li>
+          </ul>
+          <h1 style="color: rgb(47, 47, 47);" class="text-4xl inter-bold border-b-2 border-b-red-500  pb-4 mx-auto text-center w-fit ">Organizational Partners</h1>
+
+          <ul class="flex flex-wrap justify-center lg:px-8 py-20">
+            <wc-card-2 class="grid content-center" img="assets/partners/inwi-logo-png-1.webp" name="inwi"></wc-card-2>
+            <wc-card-2 class="grid content-center" img="assets/partners/andalucia.png" name="Andalucia"></wc-card-2>
+            <wc-card-2 class="grid content-center" img="assets/partners/ouss_voy.png" name="Oumassine Voyages"></wc-card-2>
+            <wc-card-2 class="grid content-center" img="assets/partners/rich.png" name="Rich media"></wc-card-2>
+          </ul>
+        </section>
+
+
+        <section class="max-w-4xl mx-auto text-gray-800 p-8 pb-20">
+            <button id="partner-form-btn" class="w-full outline-none text-white bg-ted-red p-6 lg:px-20  text-center">Interested in <strong class="text-bold"> Partnership ? </strong> 
+            <svg id="partner-form-arrow" class="inline-flex rotate-180 ml-8" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 27 24">
+            <path fill="#fff" d="m13.5 0 13.423 23.25H.077L13.5 0Z"/>
+            </svg>
+            </button>
+
+            <div class="overflow-hidden">
+            <article id="partner-form" class="hidden bg-gray-100 max-full p-4 ">
+              <img class=" h-20  mx-auto lg:my-10" src="assets/LOGO.png" alt="">
+              <p class="text-gray-800 py-8 lg:p-4">
+              Would you like to take part in the success of TEDxENCGF? Do you believe in the power of the word and in Moroccan Youth? If yes, do not hesitate to support our event in all means possible by contacting us now!
+              <br>
+              <br>
+              for more details download our <a class="underline text-ted-red" href="">Sponsorship Proposal</a>.
+              </p>
+              <hr>
+              <div class="p-4">Email: <span class="text-ted-red">tedxencgf@gmail.com</span> </div>
+              <hr>
+              <div class="p-4">Phone: <span class="text-ted-red"> +212 644-810742 </span> / <span class="text-ted-red"> +212 639-947387 </span> </div>
+              <hr>
+              <form action="" class="flex flex-col p-4">
+              <label>or message us directly by filling this form: </label>
+              <br>
+                <label for="">Full Name <strong class="text-ted-red">*</strong></label>
+                <input type="text" required class="p-4 outline-none">
+                <label for="">Email <strong class="text-ted-red">*</strong></label>
+                <input type="email" required class="p-4 outline-none">
+                <label for="">Full Name <strong class="text-ted-red">*</strong></label>
+                <textarea  class="p-4 outline-none"></textarea>
+                <button type="submit" class="bg-ted-red p-3 px-8 text-white w-fit mt-2">Send</button>
+              </form>
+            </article>
+            </div>
+          </section>
+            <wc-footer></wc-footer>
+          </div>
+  </body>
+</html>
