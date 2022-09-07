@@ -24,11 +24,11 @@ constructor(){
                     </button>
                     <img class="w-40 mb-10" src="/assets/LOGO.png" alt="">
 
-                    <a class="bg-ted-red w-full p-4 text-center text-white" href="/"> <li >Home</li></a>
-                    <a class="hover:bg-ted-red hover:text-white  w-full p-4 text-center text-black" href="/"><li >Edition</li></a>
-                    <a class="hover:bg-ted-red hover:text-white  w-full p-4 text-center text-black" href="/partners.html"><li >Partners</li> </a>
-                    <a class="hover:bg-ted-red hover:text-white  w-full p-4 text-center text-black" href="/team.html"><li >Team</li></a>
-                    <a class="hover:bg-ted-red hover:text-white  w-full p-4 text-center text-black" href="/about.html"><li >About</li></a>
+                    <a class="${location.pathname==='/' && "bg-ted-red text-white "} hover:text-white hover:bg-ted-red w-full p-4 text-center " href="/"> <li >Home</li></a>
+                    <a class="${location.pathname==='/edition.html' && "bg-ted-red text-white "} hover:bg-ted-red hover:text-white  w-full p-4 text-center " href="/edition"><li >Edition</li></a>
+                    <a class="${location.pathname==='/partners.html' && "bg-ted-red text-white "} hover:bg-ted-red hover:text-white  w-full p-4 text-center " href="/partners.html"><li >Partners</li> </a>
+                    <a class="${location.pathname==='/team.html' && "bg-ted-red text-white "} hover:bg-ted-red hover:text-white  w-full p-4 text-center " href="/team.html"><li >Team</li></a>
+                    <a class="${location.pathname==='/about.html' && "bg-ted-red text-white "} hover:bg-ted-red hover:text-white  w-full p-4 text-center " href="/about.html"><li >About</li></a>
 
               </ul>
               <img id="drop_menu_btn" class="cursor-pointer lg:hidden z-10 " alt="menu button" src="./assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg">
