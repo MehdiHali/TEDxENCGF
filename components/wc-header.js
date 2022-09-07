@@ -9,14 +9,14 @@ constructor(){
             <img class="w-44 py-4 px-4 lg:px-0 z-10" alt="logo" src="/assets/LOGO.png">
             </a>
             <nav class="hidden list-none space-x-12  lg:flex z-10">
-              <a class=" text-ted-red" href="/">Home</a>
-              <a class="hover-text-ted-red" href="test.html">Edition</a>
-              <a class="hover-text-ted-red" href="/partners.html">Partners</a>
-              <a class="hover-text-ted-red" href="/team.html">Team</a>
-              <a class="hover-text-ted-red" href="/about.html">About</a>
+              <a class=" ${window.location.pathname === '/' && "active-link"} hover:text-ted-red  border-b-2 hover:border-b-red-500" href="/">Home</a>
+              <a class=" ${window.location.pathname === '/edition.html' && "active-link"} hover-text-ted-red border-b-2 hover:border-b-red-500" href="test.html">Edition</a>
+              <a class=" ${window.location.pathname === '/partners.html' && "active-link"} hover-text-ted-red  border-b-2 hover:border-b-red-500" href="/partners.html">Partners</a>
+              <a class=" ${window.location.pathname === '/team.html' && "active-link"} hover-text-ted-red  border-b-2 hover:border-b-red-500" href="/team.html">Team</a>
+              <a class=" ${window.location.pathname === '/about.html' && "active-link"} hover-text-ted-red  border-b-2 hover:border-b-red-500" href="/about.html">About</a>
             </nav>
             <div class="hover-ted-text flex items-center space-x-4">
-              <a class="hover-text-ted-red z-10" href="#">Contact</a>
+              <a class="hover-text-ted-red z-10  border-b-2 hover:border-b-red-500" href="#">Contact</a>
               <ul id="drop_menu" class="hidden flex flex-col items-center justify-center  bg-white fixed w-screen h-screen top-0 -left-4  z-50 m-0">
 
                 <button id="drop_menu_close_btn" class="absolute top-0 right-2 text-4xl p-4">
@@ -54,4 +54,5 @@ menu_btn.addEventListener("click",()=>{
 drop_menu_close_btn.addEventListener("click",()=>{
   drop_menu.classList.add("hidden")
 })
+
 

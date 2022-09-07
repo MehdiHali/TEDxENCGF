@@ -113,3 +113,11 @@ color: #ff0000;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+.btn {
+  @apply bg-ted-red text-white py-4 px-8 text-lg
+}
+
+.active-link {
+  @apply text-ted-red
+}

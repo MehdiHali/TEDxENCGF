@@ -14,7 +14,7 @@
   </head>
 <body class="h-screen  bg-white lg:overflow-scroll">
         <div id="app">
-        <section  id="section-1" class="  lg:h-screen xl:px-32  overflow-hidden">
+        <section  id="section-1" class="  lg:h-screen xl:px-32  overflow-hidden bg-gray-100">
           <wc-header></wc-header>
           <main style="height: 80vh; background-image: url(/assets/BGs/Untitled-1.png);background-position: center;background-size: cover;" class="w-full  lg:h-full  relative grid content-center mb-10">
             <div  class=" text-7xl  lg:text-9xl text-center font-bold  text-white z-10 w-full flex justify-center space-x-4" > <div id="headline_1">About</div> <div id="headline_2">us</div></div>
@@ -22,23 +22,61 @@
           </main>
         </section>
 
-        <section class="flex flex-col items-center bg-gray-100">
-          <h1 class="w-full text-center text-2xl text-ted-red p-4  ">Background</h1>
-          <p   class="p-6 pb-10 text-center  lg:w-1/2 ">
-            Based in Fes city, Morocco, the TEDxENCGF team is a group of passionate young Moroccan Leaders who would like to make their school and its students better. We aim through this event to spread the culture of following your passion among all students and introduce this concept to all of them.
+        <section class="flex flex-col items-center lg:p-8 bg-gray-100">
+          <img class="h-16" src="assets/LOGO.png" alt="">
+          <p   class="p-6 pb-10 text-center  max-w-2xl ">
+TEDxENCGF is an ENCG event started for the first time in the history of the school by students, for students. It is a new journey of education for the profit of their peers. A group of passionate students has reunited and are in charge of planning and organizing an event in the name of their school: The National School of Commerce and Management of Fes (ENCGF). This huge event will be impactful not just locally, but nationally thanks to the quality of our guest speakers who will be sharing their passions within this year’s theme. This event will surely be home to meaningful conversations and insights for all attendees.
           </p>
         </section>
 
-        <section  class="py-8 px-4 xl:px-32">
-          <ul style="gap: 2rem;" class="flex  flex-wrap items-center justify-center">
-            <wc-card class="sm:w-52 w-full"  src="/assets/team/MOUBTASSIM Zakaria- Organizer.jpg" firstName="Zakaria" lastName="MOUBTASSIM" role="Organizer <br>" ></wc-card>
-            <wc-card class="sm:w-52 w-full" src="/assets/team/Oussama EL-JANATY- Co-Organizer.JPG"  firstName="Oussama" lastName="EL-JANATY" role="Co Organizer" ></wc-card>
-            <wc-card class="sm:w-52 w-full" src="/assets/team/Hidaya Benouda Tlemçani Marketing Communications.jpg" lastName="BENOUDA TLEMÇANI" firstName="Hidaya" role="Marketing / <br> Communications"></wc-card>
-            <wc-card class="sm:w-52 w-full" src="/assets/team/SOUKAINA EL-BATEOUI -Partnerships Sponsorship.jpg"  firstName="Soukaina" lastName="EL-BATEOUI" role="Partnerships / <br> Sponsorship" ></wc-card>
-            <wc-card class="sm:w-52 w-full" src="/assets/team/OULED-HALI Mehdi.jpeg" firstName="Mehdi" lastName="OULED-HALI" role="Website Developer <br> & Designer"></wc-card>
-            <wc-card class="sm:w-52 w-full" src="/assets/team/Younes SQUALLI HOUSSAINI -Operations.jpg"  firstName="Youness" lastName="SQUALLI HOUSSAINI" role="Operations" ></wc-card>
-          </ul>
-            </section>
+        <section style="gap: 2rem;" class="p-4 lg:px-10 flex flex-col items-center mb-10 bg-gray-100">
+          <div class="flex space-x-4 items-center w-full mb-10">
+          <h1 class="text-ted-red whitespace-nowrap text-4xl inter-black  ">Our core beliefs</h1>
+          <hr class="border-2 border-red-500 w-full">
+          </div>
+          <div style="gap: 4rem;" class="flex flex-wrap md:flex-nowrap">
+            <article class="">
+              <h1 class="text-jomhuria text-ted-red text-9xl">Educate</h1>
+              <p>Life lessons are present everywhere, in everyone's ideas and stories, to learn is simply to look and listen to others. We are here to spread ideas worth sharing and educate our community in regard to the most important aspects for them to succeed.</p>
+            </article>
+            <article>
+              <h1 class="text-jomhuria text-ted-red text-9xl">Act</h1>
+              <p>Knowing what is right and doing what is required to make it a reality are two entirely different things; as Mahatma Gandhi once said: “Be the change you want to see in the world”. Taking action for the benefit of yourself and the people around you is crucial to making an impact.</p>
+            </article>
+            <article>
+              <h1 class="text-jomhuria text-ted-red text-9xl">Inspire</h1>
+            <p>Spreading seeds grows the woods, to inspire the good is to share good thoughts, one hand won’t clap, together we could make the world a better place. Let your actions inspire others</p>
+            </article>
+          </div>
+
+        </section>
+
+        <div class="w-full p-10 bg-white grid content-center">
+          <button class="btn mx-auto">Contact <strong>us</strong></button>
+        </div>
+
+        <section style="gap: 8rem;" class="bg-gray-100 flex flex-wrap md:flex-nowrap justify-center items-center lg:px-20 mb-10">
+          <article class="p-8 max-w-xl">
+          <svg class="w-52 mx-auto" xmlns="http://www.w3.org/2000/svg" width="349" height="106" fill="none" viewBox="0 0 349 106">
+            <path fill="red" d="M28.466 27.32H0V.204h88.192V27.32H59.741V106H28.465V27.32ZM93.055.204h85.613V27.32h-54.319v13.184h54.319v25.199h-54.319v13.181h54.333V106H93.055V.204Zm122.17 78.68h12.238c19.493 0 22.343-16.45 22.343-26.39 0-6.655-2.002-25.174-24.622-25.174h-9.959v51.564ZM183.931.204h51.353c33.851 0 45.815 26.081 45.815 52.743 0 32.459-16.501 53.053-51.926 53.053h-45.242V.204ZM326.064 65.23l-9.543-16.49-9.309 16.49h-22.929l21.766-33.337L285.089 0h22.936l8.496 15.763L325.257 0h22.929l-20.952 31.893L349 65.231h-22.936Z"/>
+          </svg>
+
+          <p class="text-center">About TEDx, x = independently organized event
+In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)</p>
+          </article>
+          <hr class="absolute  border-2 border-red-500  md:-rotate-90 w-52">
+          <article class="p-8 max-w-xl">
+          <svg class="w-52 mx-auto" xmlns="http://www.w3.org/2000/svg" width="300" height="106" fill="none" viewBox="0 0 300 100">
+            <path fill="red" d="M28.466 27.32H0V.204h88.192V27.32H59.741V106H28.465V27.32ZM93.055.204h85.613V27.32h-54.319v13.184h54.319v25.199h-54.319v13.181h54.333V106H93.055V.204Zm122.17 78.68h12.239c19.493 0 22.343-16.45 22.343-26.39 0-6.655-2.003-25.174-24.623-25.174h-9.959v51.564ZM183.932.204h51.353c33.851 0 45.815 26.081 45.815 52.743 0 32.459-16.502 53.053-51.927 53.053h-45.241V.204Z"/>
+          </svg>
+
+            <p class="text-center">TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world's leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.</p>
+          </article>
+        </section>
+        <div class="w-full bg-white grid content-center">
+          <button class="btn mx-auto mb-10">Learn More About <strong>TEDx</strong></button>
+        </div>
+
           <wc-footer></wc-footer>
         </div>
   </body>
