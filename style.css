@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Jomhuria;
+  src: url('/assets/fonts/Jomhuria/Jomhuria-Regular.ttf');
+}
 /* @font-face {
   font-family: inter-regular;
   src: url('/assets/fonts/Inter/static/Inter-Regular.ttf');
 }
 
-@font-face {
-  font-family: jomhuria;
-  src: url('/assets/fonts/Jomhuria/Jomhuria-Regular.ttf');
-}
 
 @font-face {
   font-family: inter-bold;
