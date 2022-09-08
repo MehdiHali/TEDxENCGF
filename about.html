@@ -11,19 +11,24 @@
     <script type="module" src="/components/wc-card.js"></script>
     <script type="module" src="/src/main.js"></script>
     <script type="module" src="/src/headline.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="preload">
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="preload">
   </head>
 <body class="h-screen  bg-white lg:overflow-scroll">
         <div id="app">
         <section  id="section-1" class="  lg:h-screen xl:px-32  overflow-hidden bg-gray-100">
           <wc-header></wc-header>
-          <main style="height: 80vh; background-image: url(/assets/BGs/Untitled-1.png);background-position: center;background-size: cover;" class="w-full  lg:h-full  relative grid content-center mb-10">
+          <main style="height: 80vh; background-image: url(/assets/BGs/about.webp);background-position: center;background-size: cover;" class="w-full  lg:h-full  relative grid content-center mb-10">
             <div  class=" text-7xl  lg:text-9xl text-center font-bold  text-white z-10 w-full flex justify-center space-x-4" > <div id="headline_1">About</div> <div id="headline_2">us</div></div>
             <svg id="team_arrow_down" style="bottom: 1rem; right: 46%" class="absolute animate-bounce" fill="white" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 44 10 30l2.1-2.1 10.4 10.4V4h3v34.3l10.4-10.4L38 30Z"/></svg>
           </main>
         </section>
 
         <section class="flex flex-col items-center lg:p-8 bg-gray-100">
-          <img class="h-16" src="assets/LOGO.png" alt="">
+          <img class="h-16" src="assets/LOGO.webp" alt="">
           <p   class="p-6 pb-10 text-center  max-w-2xl ">
 TEDxENCGF is an ENCG event started for the first time in the history of the school by students, for students. It is a new journey of education for the profit of their peers. A group of passionate students has reunited and are in charge of planning and organizing an event in the name of their school: The National School of Commerce and Management of Fes (ENCGF). This huge event will be impactful not just locally, but nationally thanks to the quality of our guest speakers who will be sharing their passions within this year’s theme. This event will surely be home to meaningful conversations and insights for all attendees.
           </p>
@@ -52,7 +57,7 @@ TEDxENCGF is an ENCG event started for the first time in the history of the scho
         </section>
 
         <div class="w-full p-10 bg-white grid content-center">
-          <button class="btn mx-auto">Contact <strong>us</strong></button>
+         <a class="btn mx-auto" href="/contact.html"> <button >Contact <strong>us</strong></button> </a> 
         </div>
 
         <section style="gap: 8rem;" class="bg-gray-100 flex flex-wrap md:flex-nowrap justify-center items-center lg:px-20 mb-10">
@@ -74,7 +79,7 @@ In the spirit of ideas worth spreading, TEDx is a program of local, self-organiz
           </article>
         </section>
         <div class="w-full bg-white grid content-center">
-          <button class="btn mx-auto mb-10">Learn More About <strong>TEDx</strong></button>
+         <a  class="btn mx-auto mb-10" href="https://www.ted.com/tedx" target="_blank"> <button> Learn More About <strong>TEDx  </strong></button> </a>
         </div>
 
           <wc-footer></wc-footer>

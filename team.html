@@ -11,12 +11,17 @@
     <script type="module" src="/components/wc-card.js"></script>
     <script type="module" src="/src/main.js"></script>
     <script type="module" src="/src/headline.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="preload">
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="preload">
   </head>
 <body class="h-screen  bg-gray-100 lg:overflow-scroll">
         <div id="app">
         <section  id="section-1" class="  lg:h-screen xl:px-32  overflow-hidden">
           <wc-header></wc-header>
-          <main style="height: 80vh; background-image: url(/assets/BGs/Untitled-1.png);background-position: center;background-size: cover;" class="w-full  lg:h-full  relative grid content-center mb-10">
+          <main style="height: 80vh; background-image: url(/assets/BGs/team-bg.webp);background-position: center;background-size: cover;" class="w-full  lg:h-full  relative grid content-center mb-10">
             <div  class=" text-7xl  lg:text-9xl text-center font-bold  text-white z-10 w-full flex justify-center space-x-4" > <div id="headline_1">Our</div> <div id="headline_2">Team</div></div>
             <svg id="team_arrow_down" style="bottom: 1rem; right: 46%" class="absolute animate-bounce" fill="white" xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 44 10 30l2.1-2.1 10.4 10.4V4h3v34.3l10.4-10.4L38 30Z"/></svg>
           </main>
@@ -31,12 +36,12 @@
 
         <section  class="py-8 px-4 xl:px-32">
           <ul style="gap: 2rem;" class="flex  flex-wrap items-center justify-center">
-            <wc-card class="sm:w-52 w-full"  src="/assets/team/MOUBTASSIM Zakaria- Organizer.jpg" firstName="Zakaria" lastName="MOUBTASSIM" role="Organizer <br>" ></wc-card>
-            <wc-card class="sm:w-52 w-full" src="/assets/team/Oussama EL-JANATY- Co-Organizer.JPG"  firstName="Oussama" lastName="EL-JANATY" role="Co Organizer" ></wc-card>
-            <wc-card class="sm:w-52 w-full" src="/assets/team/Hidaya Benouda Tlemçani Marketing Communications.jpg" lastName="BENOUDA TLEMÇANI" firstName="Hidaya" role="Marketing / <br> Communications"></wc-card>
-            <wc-card class="sm:w-52 w-full" src="/assets/team/SOUKAINA EL-BATEOUI -Partnerships Sponsorship.jpg"  firstName="Soukaina" lastName="EL-BATEOUI" role="Partnerships / <br> Sponsorship" ></wc-card>
-            <wc-card class="sm:w-52 w-full" src="/assets/team/OULED-HALI Mehdi.jpeg" firstName="Mehdi" lastName="OULED-HALI" role="Website Developer <br> & Designer"></wc-card>
-            <wc-card class="sm:w-52 w-full" src="/assets/team/Younes SQUALLI HOUSSAINI -Operations.jpg"  firstName="Youness" lastName="SQUALLI HOUSSAINI" role="Operations" ></wc-card>
+            <wc-card class="sm:w-52 w-full"  src="/assets/team/MOUBTASSIM Zakaria- Organizer.webp" firstName="Zakaria" lastName="MOUBTASSIM" role="Organizer <br>" ></wc-card>
+            <wc-card class="sm:w-52 w-full" src="/assets/team/Oussama EL-JANATY- Co-Organizer.webp"  firstName="Oussama" lastName="EL-JANATY" role="Co Organizer" ></wc-card>
+            <wc-card class="sm:w-52 w-full" src="/assets/team/Hidaya Benouda Tlemçani Marketing Communications.webp" lastName="BENOUDA TLEMÇANI" firstName="Hidaya" role="Marketing / <br> Communications"></wc-card>
+            <wc-card class="sm:w-52 w-full" src="/assets/team/SOUKAINA EL-BATEOUI -Partnerships Sponsorship.webp"  firstName="Soukaina" lastName="EL-BATEOUI" role="Partnerships / <br> Sponsorship" ></wc-card>
+            <wc-card class="sm:w-52 w-full" src="/assets/team/OULED-HALI Mehdi.webp" firstName="Mehdi" lastName="OULED-HALI" role="Website Developer <br> & Designer"></wc-card>
+            <wc-card class="sm:w-52 w-full" src="/assets/team/Younes SQUALLI HOUSSAINI -Operations.webp"  firstName="Youness" lastName="SQUALLI HOUSSAINI" role="Operations" ></wc-card>
           </ul>
             </section>
           <wc-footer></wc-footer>

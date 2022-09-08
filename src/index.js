@@ -39,3 +39,11 @@ let curr_section = 1;
 
 
 // TEAM PAGE ANIMATIONS
+let tl4 = gsap.timeline()
+tl4.fromTo(".light-led",{y:0},{y:50,duration:2,ease: "power1.out"})
+.fromTo(".light-led",{y:50},{y:0,duration:2,ease: "power1.out"})
+.repeat(-1)
+
+
+
+

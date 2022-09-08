@@ -27,7 +27,7 @@ class wcFooter extends HTMLElement {
           <!-- DIV 2 -->
 <div class="flex flex-col items-center space-y-4 p-4 w-full">
           <div>
-            <img class="w-44" src="/assets/LOGO.png" alt="">
+            <img class="w-44 h-fit" src="/assets/LOGO.webp" alt="">
           </div>
 
   <div class="flex items-center">
@@ -54,11 +54,11 @@ class wcFooter extends HTMLElement {
   </div>
   <ul class="flex flex-wrap space-x-4 w-full justify-center">
     <li class="underline"><a href="/">Home</a></li>
-    <li class="underline"><a href="#">Edition</a></li>
-    <li class="underline"><a href="#">Partners</a></li>
-    <li class="underline"><a href="#">About</a></li>
+    <li class="underline"><a href="/edition.html">Edition</a></li>
+    <li class="underline"><a href="/partners.html">Partners</a></li>
+    <li class="underline"><a href="/about.html">About</a></li>
     <li class="underline"><a href="/team.html">Team</a></li>
-    <li class="underline"><a href="#">Contact</a></li>
+    <li class="underline"><a href="/contact.html">Contact</a></li>
   </ul>
   <p>&copy ${new Date().getFullYear()} <a class="text-ted-red" href="/">TEDxENCGF</a> - All rights reserved.
   <p>Developed with
@@ -66,7 +66,7 @@ class wcFooter extends HTMLElement {
   <path fill="#ff0000" d="m71.5 131-10.367-9.423C24.31 88.237 0 66.178 0 39.264 0 17.204 17.303 0 39.325 0 51.766 0 63.706 5.783 71.5 14.849 79.293 5.783 91.234 0 103.675 0 125.697 0 143 17.205 143 39.264c0 26.914-24.31 48.974-61.132 82.313L71.5 131Z"/>
 </svg>
 
-   by <a href="#" class="underline">Mehdi Ouled-hali</a> </p>
+   by <a target="_blank" href="https://linktr.ee/mehdi.hali" class="underline">Mehdi Ouled-hali</a> </p>
    
 </div>
           </footer>
