@@ -123,3 +123,8 @@ color: #ff0000;
 .active-link {
   @apply text-ted-red
 }
+
+
+.input {
+  @apply bg-gray-100 text-gray-400 focus:text-black p-4 text-center outline-none border border-gray-300 focus:border-gray-500;
+}

@@ -39,7 +39,7 @@
             Morocco, Fes. <br>
             Ecole National de Commerce et <br> Gestion de Fes.
           </p>
-          <button class="bg-ted-red lg:text-4xl text-2xl py-4 lg:px-14 px-4 text-white z-10 " disabled>
+          <button class="bg-ted-red lg:text-4xl text-2xl py-4 lg:px-14 px-4 text-white z-10 mx-8" disabled>
             <!-- Get your tickets ! <strong class="inter-black">NOW</strong> -->
             Tickets will be available SOON !
           </button>
@@ -49,8 +49,25 @@
         </section>
 
         <section class="bg-gray-100 p-10 my-10 flex flex-col items-center">
-          <p class="bg-gray-200 p-2  text-xl text-center mb-8">More details about the event will be available soon !
-            <br>
+        <section id="section-4" class="section relative lg:h-96 grid content-center">
+          <form class="w-fit flex flex-col space-y-4 p-4 my-10 lg:my-0  m-auto bg-transparent z-10" action="https://smartforms.dev/submit/6319dfc27a195017922f6cf9" method="POST">
+            <input type="tetx" hidden name="Topic" value="New subscription in the newsletter">
+
+          <p class="bg-gray-200 p-2  text-xl text-center mb-8 max-w-xl">More details about the event will be available in few days, Subscribe to our newsletter so you never miss a thing !.
+            
+          </p>
+          <fieldset class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+            <input class="bg-slate-100 text-slate-400 focus:text-black p-4 text-center outline-none border border-gray-300" placeholder="First Name" type="text" name="First Name" id="">
+            <input class="bg-slate-100 text-slate-400  focus:text-black p-4 text-center outline-none border border-gray-300" placeholder="Last Name" type="text" name="Last Name" id="">
+          </fieldset>
+          <input class="bg-slate-100 text-slate-400 p-4 w-full text-center outline-none focus:text-black border border-gray-300" placeholder="Email" type="text" name="Email" id="">
+          <Button class="w-full btn p-4 hover:scale-110">
+            Subscribe to our <strong>Newsletter</strong>
+          </Button>
+          </form>
+        </section>
+
+          <p class="bg-gray-200 p-2  text-xl text-center mb-8">
             if you have any questions feel free to contact us 
           </p>
           <a href="/contact.html"><button class="btn mx-auto">  Contact us </button></a>

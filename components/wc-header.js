@@ -25,7 +25,7 @@ constructor(){
                     <img class="w-40 h-fit mb-10" src="/assets/LOGO.webp" alt="">
 
                     <a class="${location.pathname==='/' && "bg-ted-red text-white "} hover:text-white hover:bg-ted-red  w-full p-4 text-center " href="/"> <li >Home</li></a>
-                    <a class="${location.pathname==='/edition.html' && "bg-ted-red text-white "} hover:bg-ted-red hover:text-white  w-full p-4 text-center " href="/edition"><li >Edition</li></a>
+                    <a class="${location.pathname==='/edition.html' && "bg-ted-red text-white "} hover:bg-ted-red hover:text-white  w-full p-4 text-center " href="/edition.html"><li >Edition</li></a>
                     <a class="${location.pathname==='/partners.html' && "bg-ted-red text-white "} hover:bg-ted-red hover:text-white  w-full p-4 text-center " href="/partners.html"><li >Partners</li> </a>
                     <a class="${location.pathname==='/team.html' && "bg-ted-red text-white "} hover:bg-ted-red hover:text-white  w-full p-4 text-center " href="/team.html"><li >Team</li></a>
                     <a class="${location.pathname==='/about.html' && "bg-ted-red text-white "} hover:bg-ted-red hover:text-white  w-full p-4 text-center " href="/about.html"><li >About</li></a>
