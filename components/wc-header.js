@@ -15,7 +15,7 @@ constructor(){
               <a class=" ${window.location.pathname === '/team.html' && "active-link"} hover-text-ted-red  hover:scale-110" href="/team.html">Team</a>
               <a class=" ${window.location.pathname === '/about.html' && "active-link"} hover-text-ted-red  hover:scale-110" href="/about.html">About</a>
             </nav>
-            <div class="hover-ted-text flex items-center space-x-4">
+            <div class="hover-ted-text flex items-center space-x-4 w-32">
               <a class="${window.location.pathname === '/contact.html' && "active-link"} hover-text-ted-red z-10  hover:scale-110" href="/contact.html">Contact</a>
               <ul id="drop_menu" class="hidden flex flex-col items-center justify-center  bg-white fixed w-screen h-screen top-0 -left-4  z-50 m-0">
 
