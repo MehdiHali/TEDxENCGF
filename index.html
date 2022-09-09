@@ -7,15 +7,6 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
 <!-- TODO -->
 <!-- sponsor carousel animation -->
 <!-- some scrolling animations -->
-<!-- news letter and messaging -->
-<!-- drop down menu animation  -->
-<!-- Contact page -->
-<!-- work more on the design and the final details -->
-<!-- test the other illustraiton idea -->
-<!-- newsletter -->
-<!-- optimazation -->
-<!-- ensure all links are functioning -->
-<!-- Contact Page -->
 
 
 <!DOCTYPE html>
@@ -90,11 +81,12 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
 
               <h1 id="ted_slogan" style="line-height: 70%;" class="overflow-hidden text-4xl md:text-5xl pl-4 pb-6 z-10"><div id="ideas">Ideas</div> <br> <div id="worth">Worth </div><br><div id="spreading" style="letter-spacing: 8px;" class="text-ted-red inter-bold">Spreading</div></h1>
               <div class=" bg-ted-red p-2 md:p-3 flex justify-center  items-center z-10 ">
-                <video poster="./assets/video-thumbnail.webp" width="5000px" class="cursor-pointer z-10"  controls>
+                <video id="tedx-video" poster="./assets/video-thumbnail.webp" width="5000px" class="hidden cursor-pointer z-10"  controls autoplay>
                   <source src="./assets/videos/9convert.com - How to keep human bias out of AI  Kriti Sharma_480p.mp4" type="video/mp4">
                   
                   sorry!, your browser does not support videos
                 </video>
+                <img id="tedx-video-thumbnail" class="cursor-pointer" src="public/assets/video-thumbnail.webp" alt="video thumbnail">
               </div>
             </div>
           </main>
@@ -109,13 +101,13 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
 
         <section id="section-2" class="section  lg:h-screen flex flex-col space-y-8 lg:py-4">
 
-          <div class="px-4">
+          <div class="">
 
           <div class="flex space-x-4 items-center w-full ">
-          <h1 class="text-ted-red whitespace-nowrap text-4xl inter-black   pb-4 lg:pb-0">Our core beliefs</h1>
+          <h1 class="text-ted-red whitespace-nowrap text-4xl inter-black px-4 pb-4 lg:pb-0">Our core beliefs</h1>
           <hr class="border-2 border-red-500 w-full">
           </div >
-          <div style="gap: 2rem;" class="flex flex-wrap md:flex-nowrap bg-gray-100  sm:py-8 pt-0 md:border-b-8 border-gray-300">
+          <div style="gap: 2rem;" class="flex flex-wrap md:flex-nowrap bg-gray-100  sm:py-8 pt-0 md:border-b-8 border-gray-300 p-4">
             <article class="">
               <h1 class="text-jomhuria text-ted-red text-9xl h-24">Educate</h1>
               <p>Life lessons are present everywhere, in everyone's ideas and stories, to learn is simply to look and listen to others. We are here to spread ideas worth sharing and educate our community in regard to the most important aspects for them to succeed.</p>

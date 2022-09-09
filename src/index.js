@@ -45,5 +45,13 @@ tl4.fromTo(".light-led",{y:0},{y:50,duration:2,ease: "power1.out"})
 .repeat(-1)
 
 
+let tedxVideo = document.getElementById("tedx-video")
+let tedxVideoThumb = document.getElementById("tedx-video-thumbnail")
 
+tedxVideoThumb.addEventListener("click",()=>{
+    console.log("play video")
+    tedxVideoThumb.classList.add("hidden")
+    tedxVideo.classList.remove("hidden")
+    tedxVideo.play()
+})
 
