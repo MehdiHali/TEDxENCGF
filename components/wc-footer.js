@@ -12,7 +12,7 @@ class wcFooter extends HTMLElement {
             </svg>
             <p>
               This independent TEDx event is operated under license from TED.
-              <br> <a class="text-ted-red underline" href="https://www.ted.com/tedx" target="_blank" >Learn More</a>
+              <br> <a class="text-ted-red underline text-sm text-center" href="https://www.ted.com/tedx" target="_blank" >learn More <br> about TEDx</a>
             </p>
             </div>
 
