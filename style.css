@@ -5,6 +5,7 @@
 @font-face {
   font-family: Jomhuria;
   src: url('/assets/fonts/Jomhuria/Jomhuria-Regular.ttf');
+  font-display: swap;
 }
 /* @font-face {
   font-family: inter-regular;
