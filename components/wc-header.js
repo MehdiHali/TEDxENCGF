@@ -31,7 +31,7 @@ constructor(){
                     <a class="${location.pathname==='/about.html' && "bg-ted-red text-white "} hover:bg-ted-red hover:text-white  w-full p-4 text-center " href="/about.html"><li >About</li></a>
 
               </ul>
-              <img id="drop_menu_btn" class="cursor-pointer lg:hidden z-10 w-fit h-fit " alt="menu button" src="./assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg">
+              <img id="drop_menu_btn" class="cursor-pointer lg:hidden z-10 w-10 h-10" alt="menu button" src="./assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg">
             </div>
           </header>
     `
