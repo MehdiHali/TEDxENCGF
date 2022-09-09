@@ -27,7 +27,7 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
           <script type="module" src="/src/main.js"></script>
           <script type="module" src="/src/index.js"></script>
   </head>
-<body class="h-screen w-screen min-w-full min-h-full  bg-white lg:overflow-hidden">
+<body class="h-screen w-screen  bg-white lg:overflow-hidden">
   
 
 
@@ -36,7 +36,7 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
         <section id="section-1" class=" section lg:h-screen">
           <wc-header></wc-header>
           
-          <main style="height: 85%;min-height: 85%; padding-bottom: 2.5rem" class="flex flex-col lg:space-x-8 lg:flex-row ">
+          <main style="height: 85%;min-height: fit-content; padding-bottom: 2.5rem" class="flex flex-col lg:space-x-8 lg:flex-row ">
             <!-- LEFT -->
             <div  class="lg:w-11/12  order-2 lg:order-1 relative  md:block w-full overflow-hidden bg-transparent h-auto  bg-gray-100 flex flex-col items-center justify-center p-10 min-h-fit">
 
@@ -55,7 +55,7 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
               </div>
 
               <!-- Right -->
-            <div  style="min-height: 85%;" class="order-1 lg:order-2  w-full relative overflow-x-clip  flex flex-col justify-between">
+            <div  class="order-1 lg:order-2  w-full relative overflow-x-clip  flex flex-col justify-between">
             <svg class="absolute right-6 md:right-30 -top-80  md:-top-80 z-0" xmlns="http://www.w3.org/2000/svg" width="700" height="800" fill="none" viewBox="0 0 2480 1380">
               <path fill="red" d="M2396.17 902.712a8.003 8.003 0 0 0 10.24 4.815l67.74-24.403a8 8 0 0 0 4.81-10.238c-1.49-4.157-6.08-6.312-10.23-4.815l-60.22 21.691-21.69-60.212a8.002 8.002 0 0 0-10.24-4.815c-4.15 1.498-6.31 6.081-4.81 10.238l24.4 67.739ZM2249 597.493c115.41 0 155.88 35.329 166.65 49.374l12.7-9.734c-14.74-19.228-60.76-55.64-179.35-55.64v16Zm166.65 49.374c3.89 5.075 9.05 10.086 14.7 19.558 5.41 9.089 10.81 21.792 13.22 39.87 4.83 36.297-2.3 95.015-47.11 190.3l14.48 6.81c45.48-96.715 53.89-158.679 48.48-199.223-2.7-20.342-8.87-35.099-15.33-45.945-6.23-10.463-13.25-17.861-15.74-21.104l-12.7 9.734Z"/>
               <path fill="#F7DC64" fill-opacity=".3" d="M2174 574v48l-818.5 757.5H0V0h1398l776 574Z"/>
@@ -71,13 +71,13 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
 
 
               <h1 id="ted_slogan" style="line-height: 70%;" class="overflow-hidden text-4xl md:text-5xl pl-4 pb-6 z-10"><div id="ideas">Ideas</div> <br> <div id="worth">Worth </div><br><div id="spreading" style="letter-spacing: 8px;" class="text-ted-red inter-bold">Spreading</div></h1>
-              <div class=" bg-ted-red p-2 md:p-3 flex justify-center  items-center z-10 min-h-fit">
+              <div style="padding-top: 56.25%" class=" bg-ted-red p-2 md:p-3 flex justify-center  items-center z-10 min-h-fit relative">
                 <video id="tedx-video" poster="./assets/video-thumbnail.webp" width="5000px" class="hidden cursor-pointer z-10"  controls >
                   <source src="./assets/videos/9convert.com - How to keep human bias out of AI  Kriti Sharma_480p.mp4" type="video/mp4">
                   
                   sorry!, your browser does not support videos
                 </video>
-                <img id="tedx-video-thumbnail" class="cursor-pointer w-fit h-fit" src="public/assets/video-thumbnail.webp" alt="video thumbnail">
+                <img width="97%" id="tedx-video-thumbnail" class="cursor-pointer  absolute top-2" src="public/assets/video-thumbnail.webp" alt="video thumbnail">
               </div>
             </div>
           </main>
