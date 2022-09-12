@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: Jomhuria;
   src: url('/assets/fonts/Jomhuria/Jomhuria-Regular.ttf');
   font-display: swap;
-}
+} */
 /* @font-face {
   font-family: inter-regular;
   src: url('/assets/fonts/Inter/static/Inter-Regular.ttf');
