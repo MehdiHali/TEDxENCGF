@@ -20,7 +20,7 @@ constructor(){
               <ul id="drop_menu" class="hidden flex flex-col items-center justify-center  bg-white fixed w-screen h-screen top-0 -left-4  z-50 m-0">
 
                 <button id="drop_menu_close_btn" class="absolute top-0 right-2 text-4xl p-4">
-                <img class="w-8" src="/assets/BIG X.svg">
+                <img class="w-8" src="/assets/BIG_X.svg">
                     </button>
                     <img class="w-40 h-fit mb-10" src="/assets/LOGO.webp" alt="">
 

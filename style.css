@@ -24,7 +24,7 @@
   src: url('/assets/fonts/Inter/static/Inter-Black.ttf');
 } */
 
-* {
+body > * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
