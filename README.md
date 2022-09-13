@@ -8,3 +8,5 @@ The official website for the TEDxENCGF event
 - [ ] add some scroll animations
 - [ ] improve the design
 - [ ] change contact form email to tedxencgf
+- [ ] change newsletter to mailer lite
+- [ ] maybe remove snapping effect

@@ -7,8 +7,7 @@ let arrow = document.getElementById("partner-form-arrow")
 
 partnerFormBtn.addEventListener("click", ()=>{
     console.log("click");
-    togglePartnerForm()
-
+    togglePartnerForm();
 })
 
 function togglePartnerForm(){
