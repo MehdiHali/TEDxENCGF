@@ -52,9 +52,9 @@ body{
 }
 }
 
-.section {
+/* .section {
   scroll-snap-align: start;
-}
+} */
 
 .menu-item {
   @apply cursor-pointer hover:border-b-4 hover:border-b-red-500 p-2
@@ -79,6 +79,10 @@ body{
 
 .text-ted-red {
 color: #ff0000;
+}
+
+.border-ted-red {
+  border-color: #ff0000;
 }
 
 .hover\:bg-ted-red:hover {
@@ -128,4 +132,11 @@ color: #ff0000;
 
 .input {
   @apply bg-gray-100 text-gray-700 focus:text-black p-4 text-center outline-none border border-gray-300 focus:border-gray-500;
+}
+
+@media only screen and (min-width: 1024px){
+    .section-1 {
+      min-height: 642px;
+      max-height: 700px;
+    }
 }

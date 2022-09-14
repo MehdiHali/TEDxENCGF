@@ -2,7 +2,7 @@ class wcFooter extends HTMLElement {
     constructor(){
         super();
         this.innerHTML = `
-          <footer style="max-width: 98vw;" class="flex flex-col items-center lg:flex-row justify-between lg:h-72 overflow-hidden w-screen bg-gray-100 lg:w-screen" >
+          <footer style="max-width: 98vw;" class="flex flex-col items-center lg:flex-row justify-between lg:h-72 overflow-hidden w-screen bg-gray-100 lg:w-screen pt-8" >
             <!-- DIV 1 -->
           <div style="width: 30rem;min-width: 30rem;" class="flex text-center  relative mb-32 ">
             <div class="w-52 ml-8 flex-col text-center z-10 ">
