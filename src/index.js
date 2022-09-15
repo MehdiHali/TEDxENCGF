@@ -54,7 +54,7 @@ let section3_tl = gsap.timeline({
     pin: false,
     start: "top bottom",
     end: "top middle",
-    markers: true,
+    markers: false,
     scrub: 1,
   }
 })
