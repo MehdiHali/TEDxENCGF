@@ -50,8 +50,9 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
     class="h-screen w-screen bg-white"
   >
     <div id="app" >
+        <wc-header inside-class="xl:px-32 sticky lg:static top-0 " ></wc-header>
       <section id="section-1" class="xl:px-32 section-1 lg:h-screen">
-        <wc-header></wc-header>
+        <!-- <wc-header ></wc-header> -->
 
         <div
           style="height: 85%; min-height: fit-content; padding-bottom: 2.5rem"
@@ -101,8 +102,8 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
               style="color: #574b4b"
             >
               Morocco, Fes. <br />
-              Ecole National de Commerce et <br />
-              Gestion de Fes.
+              National School of Commerce and <br />
+              Management.
             </p>
           </div>
 
@@ -254,14 +255,16 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
             </article>
           </div>
         </div>
-        <div id="what_is_tedx" class="flex flex-wrap lg:flex-nowrap lg:h-64">
+        <div  class="flex flex-wrap lg:flex-nowrap lg:h-64">
           <img
+          id="tedx_img"
             class="h-40 w-full lg:w-auto lg:h-full object-cover"
             src="./assets/tedx-img.webp"
             alt="tedx-img"
           />
 
           <div
+          id="what_is_tedx"
             class="w-full bg-gray-100 p-8 pt-4 flex flex-col items-center justify-center space-y-10"
           >
             <svg
@@ -295,9 +298,9 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
       </section>
 
       <section
-        style="height: 701px;background-image: url(public/assets/half_X.svg);background-repeat: no-repeat;background-position: 0%;"
+        style="height: 701px;background-image: url(public/assets/BIG_X_gray.svg);background-repeat: no-repeat;background-position: center;"
         id="section-3"
-        class="  flex flex-col justify-center items-center space-y-4 relative "
+        class=" overflow-hidden flex flex-col justify-center items-center space-y-4 relative lg:bg-contain bg-cover "
       >
         <img
           class="w-28 h-fit z-10"
@@ -325,14 +328,18 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
           Tickets will be available SOON !
         </button>
         <span class="text-ted-red z-10">Seats are limited !</span>
+
+
+
       </section>
       <section
         style="min-height: 642px"
         id="section-4"
         class="relative lg:h-96 grid content-center"
       >
+
         <form
-          class="w-fit flex flex-col space-y-4 p-4 my-10 lg:my-0 m-auto bg-transparent z-10"
+          class=" w-fit flex flex-col space-y-4 p-4 my-8 lg:my-0 m-auto bg-transparent z-10"
           action="https://smartforms.dev/submit/6319dfc27a195017922f6cf9"
           method="POST"
         >
@@ -375,12 +382,33 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
             Subscribe to our <strong>Newsletter</strong>
           </button>
         </form>
+
       </section>
       <section
-        style="min-height: 642px"
+        style="min-height: 600px;max-height: 800px;"
         id="section-5"
         class="lg:h-screen flex flex-col items-center space-y-4 justify-between"
       >
+
+        <div class="flex flex-col items-center my-8 lg:my-20">
+          <h1 class="text-4xl text-ted-red text-center inter-bold pb-8">
+            Get Involved !
+          </h1>
+          <p class="text-center max-w-xl text-gray-800 mb-8">
+            Would you like to take part in the success of TEDxENCGF? Do you
+            believe in the power of the word and in Moroccan Youth? If yes, do not hesitate to support our event in all means possible by
+            contacting us now!
+          </p>
+          <a
+            class="text-center btn p-4 px-6 text-2xl hover:scale-110"
+            href="/partners.html#partner-form-btn"
+          >
+            <button>
+              Become a <strong class="font-bold"> Partner </strong>
+            </button>
+          </a>
+        </div>
+
         <div
           style="max-width: 98vw"
           class="w-screen flex flex-col lg:flex-row lg:h-60 items-center hidden"
@@ -465,25 +493,6 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
               />
             </li>
           </ul>
-        </div>
-        <div class="flex flex-col items-center">
-          <h1 class="text-4xl text-ted-red text-center inter-bold pb-8">
-            Get Involved !
-          </h1>
-          <p class="text-center max-w-xl text-gray-800 mb-8">
-            Would you like to take part in the success of TEDxENCGF? Do you
-            believe in the power of the word and in Moroccan Youth? If yes, do
-            not hesitate to support our event in all means possible by
-            contacting us now!
-          </p>
-          <a
-            class="text-center btn p-4 px-6 text-2xl hover:scale-110"
-            href="/partners.html#partner-form-btn"
-          >
-            <button>
-              Become a <strong class="font-bold"> Partner </strong>
-            </button>
-          </a>
         </div>
 
         <!-- <section class="max-w-4xl mx-auto text-gray-800 p-8 pb-20">

@@ -1,3 +1,4 @@
+
 class wcFooter extends HTMLElement {
     constructor(){
         super();
@@ -30,7 +31,7 @@ class wcFooter extends HTMLElement {
             <img class="w-44 h-fit" src="/assets/LOGO.webp" alt="">
           </div>
 
-  <div style="gap:1rem" class="flex items-center">
+  <div  id="footer_sm_links"  style="gap:1rem" class="flex items-center h-10">
   <a target="_blank" href="https://www.facebook.com/TEDxENCGF">
       <svg  class="" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" viewBox="0 0 71 71">
         <path class="hover:fill-red-600" fill="#000" d="M35.5 6.035c-16.27 0-29.583 13.283-29.583 29.643 0 14.791 10.827 27.068 24.968 29.287V44.257h-7.514v-8.58h7.514V29.14c0-7.426 4.408-11.508 11.183-11.508 3.224 0 6.597.562 6.597.562V25.5h-3.728c-3.668 0-4.822 2.278-4.822 4.615v5.562h8.224l-1.331 8.579h-6.893v20.708a29.584 29.584 0 0 0 24.968-29.287c0-16.36-13.312-29.643-29.583-29.643Z"/>
@@ -42,9 +43,15 @@ class wcFooter extends HTMLElement {
       </svg>
   </a>
   <a target="_blank" href="https://www.ted.com/tedx/events/51945">
-      <svg class=" w-10"  xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 67 67">
-        <path class="hover:fill-red-600"   fill="#000" d="M33.635 0C15.252 0 .269 14.908.269 33.199A33.165 33.165 0 0 0 4.714 49.78L0 67l17.676-4.623a33.506 33.506 0 0 0 15.959 4.053C52.018 66.43 67 51.523 67 33.232c0-8.877-3.468-17.219-9.764-23.483C50.94 3.45 42.556 0 33.635 0Zm.033 5.595c7.407 0 14.343 2.88 19.595 8.107 5.219 5.225 8.114 12.16 8.114 19.53 0 15.209-12.457 27.57-27.742 27.57-4.983 0-9.865-1.306-14.107-3.852l-1.01-.57-10.505 2.747 2.794-10.184-.673-1.072C7.374 43.55 5.892 38.424 5.892 33.2 5.926 17.99 18.349 5.596 33.668 5.596Zm-11.85 12.26c-.54 0-1.449.201-2.223 1.039-.74.838-2.93 2.881-2.93 6.934 0 4.088 2.997 8.007 3.368 8.576.471.57 5.925 8.945 14.309 12.496a36.475 36.475 0 0 0 4.747 1.776c1.986.636 3.805.535 5.252.334 1.616-.234 4.916-2.01 5.623-3.953.707-1.943.707-3.584.505-3.953-.236-.334-.775-.535-1.616-.904-.842-.469-4.95-2.479-5.69-2.747-.775-.268-1.246-.402-1.886.402-.538.838-2.154 2.714-2.626 3.25-.505.569-.976.636-1.784.234-.875-.435-3.569-1.306-6.734-4.12-2.491-2.212-4.141-4.925-4.646-5.763-.404-.803-.034-1.306.37-1.674.37-.369.91-.972 1.246-1.474.438-.47.572-.838.842-1.374.27-.57.134-1.039-.068-1.44-.202-.369-1.885-4.523-2.592-6.165-.673-1.608-1.347-1.407-1.886-1.44-.47 0-1.01-.034-1.582-.034Z"/>
-      </svg>
+            <svg class=" w-16  mx-auto" xmlns="http://www.w3.org/2000/svg" width="310" height="94" fill="none" viewBox="0 0 310 94">
+<path class="hover:fill-red-600" fill="black" d="M25.252 24.227H0V.181h78.235v24.046H52.996V94H25.252V24.227ZM82.55.18h75.947v24.047H110.31V35.92h48.187v22.346H110.31v11.689h48.2V94H82.55V.18Zm108.377 69.774h10.856c17.293 0 19.821-14.588 19.821-23.403 0-5.901-1.776-22.324-21.843-22.324h-8.834v45.727ZM163.166.18h45.556c30.029 0 40.642 23.128 40.642 46.772C249.364 75.737 234.726 94 203.3 94h-40.134V.18Zm126.086 57.666-8.465-14.623-8.259 14.623h-20.34l19.309-29.564L252.904 0h20.346l7.537 13.979L288.537 0h20.34L290.29 28.282l19.309 29.564h-20.347Z"/>
+            </svg>
+  </a>
+  <a target="_blanc" href="http://www.linkedin.com">
+      <svg class="w-10" xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="none" viewBox="0 0 38 38">
+  <path class="hover:fill-red-600" fill="#000" d="M33.778 0A4.222 4.222 0 0 1 38 4.222v29.556A4.222 4.222 0 0 1 33.778 38H4.222A4.222 4.222 0 0 1 0 33.778V4.222A4.222 4.222 0 0 1 4.222 0h29.556Zm-1.056 32.722V21.533a6.882 6.882 0 0 0-6.882-6.882c-1.794 0-3.884 1.098-4.898 2.745v-2.344h-5.89v17.67h5.89V22.314c0-1.625 1.31-2.955 2.935-2.955a2.956 2.956 0 0 1 2.955 2.955v10.408h5.89ZM8.192 11.738a3.547 3.547 0 0 0 3.546-3.547c0-1.963-1.584-3.568-3.547-3.568a3.568 3.568 0 0 0-3.568 3.568c0 1.963 1.605 3.547 3.568 3.547Zm2.934 20.984v-17.67H5.278v17.67h5.848Z"/>
+</svg>
+
   </a>
   </div>
   <ul style="gap:1rem" class="flex flex-wrap  w-full justify-center">
@@ -70,3 +77,20 @@ class wcFooter extends HTMLElement {
 }
 
 customElements.define("wc-footer",wcFooter)
+
+let sm_links = document.getElementById("footer_sm_links")
+
+console.log(sm_links.children);
+
+for (let i = 0; i < sm_links.childElementCount; i++) {
+  let child = sm_links.children[i]
+  child.addEventListener("mouseover",()=>{
+  // console.log("HELLO ");
+  console.log(child.children[0].children[0].classList.add("fill-red-600"));
+  })
+  
+  child.addEventListener("mouseleave",()=>{
+  // console.log("BYE ");
+  console.log(child.children[0].children[0].classList.remove("fill-red-600"));
+  })
+} 
