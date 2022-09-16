@@ -19,6 +19,15 @@ tl3.to("#section1_slogan", {duration: 1, text: "Act", ease: "power4.inOut"})
 
 
 
+
+
+
+
+  let mm = gsap.matchMedia();
+
+  /* MOBILE---------------- */
+  mm.add("(max-width: 768px)", ()=>{
+
 let beliefs_tl = new gsap.timeline({
     // yes, we can add it to an entire timeline!
     scrollTrigger: {
@@ -30,14 +39,6 @@ let beliefs_tl = new gsap.timeline({
       scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
     }
   });
-
-
-
-
-  let mm = gsap.matchMedia();
-
-  /* MOBILE---------------- */
-  mm.add("(max-width: 768px)", ()=>{
 
 beliefs_tl.fromTo("#beliefs_hr",{width: 0},{width: "100%", duration: 1, ease: "power2.out"},"-=0.8")
 .fromTo("#beliefs_educate",{x: 100,opacity: 0},{x:0, opacity: 1, duration: 1, ease: "power2.inOut"},"-=0.8")
@@ -72,11 +73,11 @@ section3_tl.fromTo("#section-3",{y: 0},{y:0, duration: 2, ease:"power3.inOut"},1
 
 let global_tl = gsap.timeline();
 
-global_tl.fromTo("#section1_bigx",{scale:30,rotate: 800,opacity: 0},{scrollTrigger: {
+global_tl.fromTo("#section1_bigx",{scale:30,rotate: 180,opacity: 0},{scrollTrigger: {
     trigger: "#section-1",
     pin: false,   // pin the trigger element while active
     start: "top bottom", // when the top of the trigger hits the top of the viewport
-    end: "60% 30%",
+    end: "60% 50%",
     markers: false,
     scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
 },scale:1,rotation: 0,opacity: 1, duration: 1, ease: "power2.inOut"},0)
@@ -93,11 +94,31 @@ scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
 },opacity:1, x:0, duration: 1, ease:"power2.inOut"},"-=0.5")
 
 .add(section3_tl)
+.fromTo("#mlb2-1414815",{y:300},{scrollTrigger:{
+  trigger: "#mlb2-1414815",
+  pin: false,
+  start: "top bottom",
+  end: "top 80%",
+  markers: false,
+  scrub: 1
+},y:0,duration: 1, ease: "power2.inOut"})
 
   })
 
   /* BIG SCREENS============ */
   mm.add("(min-width: 768px)", ()=>{
+
+let beliefs_tl = new gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+      trigger: "#section-2",
+      pin: false,   // pin the trigger element while active
+      start: "top bottom", // when the top of the trigger hits the top of the viewport
+      end: "top -20%",
+      markers: false,
+      scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+    }
+  });
 
 // tl.from("#section1_bigx",{y:200,opacity: 0, duration: 1, ease: "power2.inOut"},0)
 // .from("#section1_slogan",{y: 200, duration: 1, ease: "power2.inOut"},"-=1")
@@ -146,6 +167,17 @@ section3_tl.from("#section-3",{y: 500, duration: 2, ease:"power3.inOut"})
 .from(section3_childs[4],{y: 500, duration: 2, ease:"power3.inOut"},1)
 .from(section3_childs[5],{y: 500, duration: 2, ease:"power3.inOut"},1.1)
 .from(section3_childs[6],{y: 500, duration: 2, ease:"power3.inOut"},1.2)
+
+
+gsap.fromTo("#mlb2-1414815",{y:300},{scrollTrigger:{
+  trigger: "#mlb2-1414815",
+  pin: false,
+  start: "top bottom",
+  end: "top 80%",
+  markers: false,
+  scrub: 1
+},y:0,duration: 1, ease: "power2.inOut"})
+
 
 
   })
