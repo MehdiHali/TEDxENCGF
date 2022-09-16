@@ -11,7 +11,7 @@ The official website for the TEDxENCGF event
 - [ ] change newsletter to mailer lite
 - [ ] maybe remove snapping effect
 
-
+<!-- df -->
 
 <!--  Hi, Everyone.
 
