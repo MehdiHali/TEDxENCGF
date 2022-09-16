@@ -141,8 +141,8 @@ let section3_tl = gsap.timeline({ scrollTrigger: {
     trigger: "#section-3",
     pin: false,
     start: "top bottom",
-    end: "top top",
-    markers: true,
+    end: "top -20%",
+    markers: false,
     scrub: 1,
   }
 })
@@ -156,19 +156,19 @@ gsap.set("#beliefs_act_content",{visibility: "hidden"})
 gsap.set("#beliefs_inspire_content",{visibility: "hidden"})
 gsap.set("#what_is_tedx",{visibility: "hidden"})
 
-beliefs_tl.fromTo("#beliefs_hr",{width: 0},{width: "100%", duration: 1.5, ease: "power2.out"},"-=0.5")
-.fromTo("#beliefs_educate",{x: 100, autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"},"-=0.5")
+beliefs_tl.fromTo("#beliefs_educate",{x: 100, autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"},0)
 .fromTo("#beliefs_act",{x: 100, autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"},"-=0.5")
 .fromTo("#beliefs_inspire",{x: 100, autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"},"-=0.6")
 .fromTo("#beliefs_educate_content",{y: -50, autoAlpha: 0},{y:0, autoAlpha: 1, duration: 1, ease: "power2.out"},"-=0.9")
 .fromTo("#beliefs_act_content",{y: -50, autoAlpha: 0},{y:0, autoAlpha: 1, duration: 1, ease: "power2.out"},"-=0.9")
 .fromTo("#beliefs_inspire_content",{y: -50, autoAlpha: 0},{y:0, autoAlpha: 1, duration: 1, ease: "power2.out"},"-=0.9")
+.fromTo("#beliefs_hr",{width: 0},{width: "100%", duration: 2, ease: "power2.out"},"-=1.5")
 .fromTo("#what_is_tedx",{autoAlpha:0, x: -100},{autoAlpha:1,x:0, duration: 1, ease:"power2.inOut"},"-=0.5")
 .add(section3_tl)
 
 
 let section3_childs = document.querySelectorAll("#section-3 > *")
-section3_tl.fromTo("#section-3",{y:100},{y:0,duration: 4, ease:"power2.inOut"})
+section3_tl.fromTo("#section-3",{y:200},{y:0,duration: 4, ease:"power2.inOut"})
 .fromTo(section3_childs[0],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0)
 .fromTo(section3_childs[1],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0.5)
 .fromTo(section3_childs[2],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0.7)
@@ -179,14 +179,22 @@ section3_tl.fromTo("#section-3",{y:100},{y:0,duration: 4, ease:"power2.inOut"})
 
 
 
-gsap.fromTo("#mlb2-1414815",{y:300},{scrollTrigger:{
+gsap.fromTo("#mlb2-1414815",{y:100,autoAlpha: 0},{scrollTrigger:{
   trigger: "#mlb2-1414815",
   pin: false,
   start: "top bottom",
-  end: "top 80%",
+  end: "top 70%",
   markers: false,
   scrub: 1
-},y:0,duration: 1, ease: "power2.inOut"})
+},y:0,autoAlpha: 1,duration: 2, ease: "power1.inOut"})
+gsap.fromTo("#get-involved",{y:100},{scrollTrigger:{
+  trigger: "#get-involved",
+  pin: false,
+  start: "top bottom",
+  end: "top top",
+  scrub: 1,
+  markers: false
+},y:0, duration: 1, ease: "power2.inOut"})
 
 
 
