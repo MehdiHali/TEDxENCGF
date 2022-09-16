@@ -142,7 +142,7 @@ let section3_tl = gsap.timeline({ scrollTrigger: {
     pin: false,
     start: "-50% bottom",
     end: "top 70%",
-    markers: true,
+    markers: false,
     scrub: 1,
   }
 })
