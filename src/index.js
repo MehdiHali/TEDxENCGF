@@ -13,9 +13,9 @@ tl3.to("#section1_slogan", {duration: 1, text: "Act", ease: "power4.inOut"})
 .to("#section1_slogan", {duration: 1, text: "Inspire", ease: "power4.inOut"},"+=0.9")
 .to("#section1_slogan", {duration: 1, text: "Educate", ease: "power4.inOut"},"+=0.9");
 
-// tl.fromTo("#ideas", {y: 100,opacity:0}, {y: 0,opacity:1, duration: 1,ease: "power4.inOut"})
-// .fromTo("#worth", {y: 100,opacity:0}, {y: 0,opacity:1, duration: 1,ease: "power4.inOut" },'-=0.9')
-// .fromTo("#spreading", {y: 100,opacity:0}, {y: 0,opacity:1, duration: 1,ease: "power4.inOut"},"-=0.85")
+// tl.fromTo("#ideas", {y: 100,autoAlpha:0}, {y: 0,autoAlpha:1, duration: 1,ease: "power4.inOut"})
+// .fromTo("#worth", {y: 100,autoAlpha:0}, {y: 0,autoAlpha:1, duration: 1,ease: "power4.inOut" },'-=0.9')
+// .fromTo("#spreading", {y: 100,autoAlpha:0}, {y: 0,autoAlpha:1, duration: 1,ease: "power4.inOut"},"-=0.85")
 
 
 
@@ -41,12 +41,12 @@ let beliefs_tl = new gsap.timeline({
   });
 
 beliefs_tl.fromTo("#beliefs_hr",{width: 0},{width: "100%", duration: 1, ease: "power2.out"},"-=0.8")
-.fromTo("#beliefs_educate",{x: 100,opacity: 0},{x:0, opacity: 1, duration: 1, ease: "power2.inOut"},"-=0.8")
-.fromTo("#beliefs_act",{x: 100,opacity: 0},{x:0, opacity: 1, duration: 1, ease: "power2.inOut"},"-=0.8")
-.fromTo("#beliefs_inspire",{x: 100,opacity: 0},{x:0, opacity: 1, duration: 1, ease: "power2.inOut"},"-=0.8")
-.fromTo("#beliefs_educate_content",{y: -50, opacity: 0},{y:0, opacity: 1, duration: 1, ease: "power2.out"},"-=0.9")
-.fromTo("#beliefs_act_content",{y: -50, opacity: 0},{y:0, opacity: 1, duration: 1, ease: "power2.out"},"-=0.9")
-.fromTo("#beliefs_inspire_content",{y: -50, opacity: 0},{y:0, opacity: 1, duration: 1, ease: "power2.out"},"-=0.5")
+.fromTo("#beliefs_educate",{x: 100,autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"},"-=0.8")
+.fromTo("#beliefs_act",{x: 100,autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"},"-=0.8")
+.fromTo("#beliefs_inspire",{x: 100,autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"},"-=0.8")
+.fromTo("#beliefs_educate_content",{y: -50, autoAlpha: 0},{y:0, autoAlpha: 1, duration: 1, ease: "power2.out"},"-=0.9")
+.fromTo("#beliefs_act_content",{y: -50, autoAlpha: 0},{y:0, autoAlpha: 1, duration: 1, ease: "power2.out"},"-=0.9")
+.fromTo("#beliefs_inspire_content",{y: -50, autoAlpha: 0},{y:0, autoAlpha: 1, duration: 1, ease: "power2.out"},"-=0.5")
 
 
 let section3_tl = gsap.timeline({
@@ -73,25 +73,25 @@ section3_tl.fromTo("#section-3",{y: 0},{y:0, duration: 2, ease:"power3.inOut"},1
 
 let global_tl = gsap.timeline();
 
-global_tl.fromTo("#section1_bigx",{scale:30,rotate: 180,opacity: 0},{scrollTrigger: {
+global_tl.fromTo("#section1_bigx",{scale:30,rotate: 180,autoAlpha: 0},{scrollTrigger: {
     trigger: "#section-1",
     pin: false,   // pin the trigger element while active
     start: "top bottom", // when the top of the trigger hits the top of the viewport
     end: "60% 50%",
     markers: false,
     scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-},scale:1,rotation: 0,opacity: 1, duration: 1, ease: "power2.inOut"},0)
+},scale:1,rotation: 0,autoAlpha: 1, duration: 1, ease: "power2.inOut"},0)
 
 .add(beliefs_tl)
 
-.fromTo("#what_is_tedx",{opacity: 0, x: -100},{scrollTrigger:{
+.fromTo("#what_is_tedx",{autoAlpha: 0, x: -100},{scrollTrigger:{
 trigger: "#what_is_tedx",
 pin: false,   // pin the trigger element while active
 start: "top bottom", // when the top of the trigger hits the top of the viewport
 end: "top 40%",
 markers: false,
 scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-},opacity:1, x:0, duration: 1, ease:"power2.inOut"},"-=0.5")
+},autoAlpha:1, x:0, duration: 1, ease:"power2.inOut"},"-=0.5")
 
 .add(section3_tl)
 .fromTo("#mlb2-1414815",{y:300},{scrollTrigger:{
@@ -120,53 +120,63 @@ let beliefs_tl = new gsap.timeline({
     }
   });
 
-// tl.from("#section1_bigx",{y:200,opacity: 0, duration: 1, ease: "power2.inOut"},0)
+// tl.from("#section1_bigx",{y:200,autoAlpha: 0, duration: 1, ease: "power2.inOut"},0)
 // .from("#section1_slogan",{y: 200, duration: 1, ease: "power2.inOut"},"-=1")
 // .from("#section1_subtitle",{y: 200, duration: 1, ease: "power2.inOut"},"-=0.9")
 // .add(tl3)
 
 let tl = new gsap.timeline();
-
-tl.fromTo("#ideas", {y: 100,opacity:0}, {y: 0,opacity:1, duration: 1,ease: "power4.inOut"})
-.fromTo("#worth", {y: 100,opacity:0}, {y: 0,opacity:1, duration: 1,ease: "power4.inOut" },'-=0.9')
-.fromTo("#spreading", {y: 100,opacity:0}, {y: 0,opacity:1, duration: 1,ease: "power4.inOut"},"-=0.85")
-.from("#section1_bigx",{scale: 500,rotation: 500, duration: 3, ease: "power4.inOut"},0)
-.from("#section1_slogan",{y: 200, duration: 1, ease: "power2.inOut"},2)
-.from("#section1_subtitle",{y: 200, duration: 1, ease: "power2.inOut"},"-=0.9")
+gsap.set("#section1_subtitle",{visibility:"hidden"})
+gsap.set("#section1_slogan",{visibility:"hidden"})
+tl.fromTo("#ideas", {y: 100,autoAlpha:0}, {y: 0,autoAlpha:1, duration: 1,ease: "power4.inOut"})
+.fromTo("#worth", {y: 100,autoAlpha:0}, {y: 0,autoAlpha:1, duration: 1,ease: "power4.inOut" },'-=0.9')
+.fromTo("#spreading", {y: 100,autoAlpha:0}, {y: 0,autoAlpha:1, duration: 1,ease: "power4.inOut"},"-=0.85")
+.fromTo("#section1_bigx",{scale: 500,rotation: 500},{scale: 1, rotation: 0, duration: 3, ease: "power4.inOut"},0)
+.fromTo("#section1_slogan",{y: 200,autoAlpha: 0},{y: 0,autoAlpha:1, duration: 1, ease: "power2.inOut"},2)
+.fromTo("#section1_subtitle",{y: 200, autoAlpha: 0},{y:0,autoAlpha: 1, duration: 1, ease: "power2.inOut"},"-=0.9")
 .add(tl3)
 
 
-beliefs_tl.from("#beliefs_container", {height: 0, duration: 1, ease: "power2.out"})
-.from("#beliefs_hr",{width: 0, duration: 1.5, ease: "power2.out"},"-=0.5")
-.from("#beliefs_educate",{x: 100, opacity: 0, duration: 1, ease: "power2.inOut"},"-=0.5")
-.from("#beliefs_act",{x: 100, opacity: 0, duration: 1, ease: "power2.inOut"},"-=0.5")
-.from("#beliefs_inspire",{x: 100, opacity: 0, duration: 1, ease: "power2.inOut"},"-=0.6")
-.from("#beliefs_educate_content",{y: -50, opacity: 0, duration: 1, ease: "power2.out"},"-=0.9")
-.from("#beliefs_act_content",{y: -50, opacity: 0, duration: 1, ease: "power2.out"},"-=0.9")
-.from("#beliefs_inspire_content",{y: -50, opacity: 0, duration: 1, ease: "power2.out"},"-=0.9")
-.from("#what_is_tedx",{opacity:0, x: -100, duration: 1, ease:"power2.inOut"},"-=0.5")
-
-
-let section3_tl = gsap.timeline({
-  scrollTrigger: {
+let section3_tl = gsap.timeline({ scrollTrigger: {
     trigger: "#section-3",
     pin: false,
     start: "-50% bottom",
     end: "top 70%",
-    markers: false,
+    markers: true,
     scrub: 1,
   }
 })
 
+
 let section3_childs = document.querySelectorAll("#section-3 > *")
-section3_tl.from("#section-3",{y: 500, duration: 2, ease:"power3.inOut"})
-.from(section3_childs[0],{y: 500, duration: 2, ease:"power3.inOut"},0)
-.from(section3_childs[1],{y: 500, duration: 2, ease:"power3.inOut"},0.5)
-.from(section3_childs[2],{y: 500, duration: 2, ease:"power3.inOut"},0.7)
-.from(section3_childs[3],{y: 500, duration: 2, ease:"power3.inOut"},0.9)
-.from(section3_childs[4],{y: 500, duration: 2, ease:"power3.inOut"},1)
-.from(section3_childs[5],{y: 500, duration: 2, ease:"power3.inOut"},1.1)
-.from(section3_childs[6],{y: 500, duration: 2, ease:"power3.inOut"},1.2)
+section3_tl.fromTo("#section-3",{y: 500},{y:0,duration: 2, ease:"power3.inOut"})
+.fromTo(section3_childs[0],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0)
+.fromTo(section3_childs[1],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0.5)
+.fromTo(section3_childs[2],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0.7)
+.fromTo(section3_childs[3],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0.9)
+.fromTo(section3_childs[4],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1)
+.fromTo(section3_childs[5],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1.1)
+.fromTo(section3_childs[6],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1.2)
+
+gsap.set("#beliefs_educate",{visibility: "hidden"})
+gsap.set("#beliefs_act",{visibility: "hidden"})
+gsap.set("#beliefs_inspire",{visibility: "hidden"})
+gsap.set("#beliefs_educate_content",{visibility: "hidden"})
+gsap.set("#beliefs_act_content",{visibility: "hidden"})
+gsap.set("#beliefs_inspire_content",{visibility: "hidden"})
+gsap.set("#what_is_tedx",{visibility: "hidden"})
+
+beliefs_tl.fromTo("#beliefs_hr",{width: 0},{width: "100%", duration: 1.5, ease: "power2.out"},"-=0.5")
+.fromTo("#beliefs_educate",{x: 100, autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"},"-=0.5")
+.fromTo("#beliefs_act",{x: 100, autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"},"-=0.5")
+.fromTo("#beliefs_inspire",{x: 100, autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"},"-=0.6")
+.fromTo("#beliefs_educate_content",{y: -50, autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.out"},"-=0.9")
+.fromTo("#beliefs_act_content",{y: -50, autoAlpha: 0},{y:0, autoAlpha: 1, duration: 1, ease: "power2.out"},"-=0.9")
+.fromTo("#beliefs_inspire_content",{y: -50, autoAlpha: 0},{y:0, autoAlpha: 1, duration: 1, ease: "power2.out"},"-=0.9")
+.fromTo("#what_is_tedx",{autoAlpha:0, x: -100},{autoAlpha:1,x:0, duration: 1, ease:"power2.inOut"},"-=0.5")
+.add(section3_tl)
+
+
 
 
 gsap.fromTo("#mlb2-1414815",{y:300},{scrollTrigger:{
