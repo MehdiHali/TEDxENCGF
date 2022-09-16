@@ -189,14 +189,14 @@ gsap.fromTo("#mlb2-1414815",{y:100,autoAlpha: 0},{scrollTrigger:{
   markers: false,
   scrub: 1
 },y:0,autoAlpha: 1,duration: 2, ease: "power1.inOut"})
-gsap.fromTo("#get-involved",{y:100},{scrollTrigger:{
+gsap.fromTo("#get-involved",{y:100, autoAlpha: 0},{scrollTrigger:{
   trigger: "#get-involved",
   pin: false,
   start: "top bottom",
   end: "top top",
   scrub: 1,
   markers: false
-},y:0, duration: 1, ease: "power2.inOut"})
+},y:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"})
 
 
 
