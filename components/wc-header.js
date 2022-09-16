@@ -65,7 +65,7 @@ header_nav_links.forEach(link => {
     hr.classList.remove("hidden")
     console.log("Hover"); 
     console.log(hr)
-    gsap.fromTo(hr,{width: 0}, {width: "90%", duration: 1, ease: "Power2.inOut"})
+    gsap.fromTo(hr,{width: 0}, {width: "90%", duration: 0.5, ease: "Power2.inOut"})
   })
   link.addEventListener("mouseleave",()=>{
     hr.classList.add("hidden")

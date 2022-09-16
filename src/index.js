@@ -140,23 +140,13 @@ tl.fromTo("#ideas", {y: 100,autoAlpha:0}, {y: 0,autoAlpha:1, duration: 1,ease: "
 let section3_tl = gsap.timeline({ scrollTrigger: {
     trigger: "#section-3",
     pin: false,
-    start: "-50% bottom",
-    end: "top 70%",
-    markers: false,
+    start: "top bottom",
+    end: "top top",
+    markers: true,
     scrub: 1,
   }
 })
 
-
-let section3_childs = document.querySelectorAll("#section-3 > *")
-section3_tl.fromTo("#section-3",{y: 500},{y:0,duration: 2, ease:"power3.inOut"})
-.fromTo(section3_childs[0],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0)
-.fromTo(section3_childs[1],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0.5)
-.fromTo(section3_childs[2],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0.7)
-.fromTo(section3_childs[3],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0.9)
-.fromTo(section3_childs[4],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1)
-.fromTo(section3_childs[5],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1.1)
-.fromTo(section3_childs[6],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1.2)
 
 gsap.set("#beliefs_educate",{visibility: "hidden"})
 gsap.set("#beliefs_act",{visibility: "hidden"})
@@ -170,12 +160,22 @@ beliefs_tl.fromTo("#beliefs_hr",{width: 0},{width: "100%", duration: 1.5, ease: 
 .fromTo("#beliefs_educate",{x: 100, autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"},"-=0.5")
 .fromTo("#beliefs_act",{x: 100, autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"},"-=0.5")
 .fromTo("#beliefs_inspire",{x: 100, autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"},"-=0.6")
-.fromTo("#beliefs_educate_content",{y: -50, autoAlpha: 0},{x:0, autoAlpha: 1, duration: 1, ease: "power2.out"},"-=0.9")
+.fromTo("#beliefs_educate_content",{y: -50, autoAlpha: 0},{y:0, autoAlpha: 1, duration: 1, ease: "power2.out"},"-=0.9")
 .fromTo("#beliefs_act_content",{y: -50, autoAlpha: 0},{y:0, autoAlpha: 1, duration: 1, ease: "power2.out"},"-=0.9")
 .fromTo("#beliefs_inspire_content",{y: -50, autoAlpha: 0},{y:0, autoAlpha: 1, duration: 1, ease: "power2.out"},"-=0.9")
 .fromTo("#what_is_tedx",{autoAlpha:0, x: -100},{autoAlpha:1,x:0, duration: 1, ease:"power2.inOut"},"-=0.5")
 .add(section3_tl)
 
+
+let section3_childs = document.querySelectorAll("#section-3 > *")
+section3_tl.fromTo("#section-3",{y:100},{y:0,duration: 4, ease:"power2.inOut"})
+.fromTo(section3_childs[0],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0)
+.fromTo(section3_childs[1],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0.5)
+.fromTo(section3_childs[2],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0.7)
+.fromTo(section3_childs[3],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},0.9)
+.fromTo(section3_childs[4],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1)
+.fromTo(section3_childs[5],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1.1)
+.fromTo(section3_childs[6],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1.2)
 
 
 
