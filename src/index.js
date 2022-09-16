@@ -73,6 +73,8 @@ section3_tl.fromTo("#section-3",{y: 0},{y:0, duration: 2, ease:"power3.inOut"},1
 
 let global_tl = gsap.timeline();
 
+gsap.set("#section1_slogan",{visibility: "visible"})
+gsap.set("#section1_subtitle",{visibility: "visible"})
 global_tl.fromTo("#section1_bigx",{scale:30,rotate: 180,autoAlpha: 0},{scrollTrigger: {
     trigger: "#section-1",
     pin: false,   // pin the trigger element while active
