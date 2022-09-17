@@ -22,3 +22,5 @@ I’m happy to share that I have joined the team at #TEDxENCGF as a #webdevelope
 <!-- TODO -->
 <!-- sponsor carousel animation -->
 <!-- some scrolling animations -->
+<!-- 404 -->
+<!-- edition page -->

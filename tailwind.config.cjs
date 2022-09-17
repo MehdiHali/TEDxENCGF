@@ -7,6 +7,7 @@ module.exports = {
     "team.html",
     "about.html",
     "contact.html",
+    "404.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
     "./components/**/*.{vue,js,ts,jsx,tsx}",
   ],
