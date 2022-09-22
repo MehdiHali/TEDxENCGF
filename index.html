@@ -158,7 +158,7 @@
               style="padding-top: 56.25%"
               class="bg-ted-red p-2 md:p-3 flex justify-center items-center z-10 min-h-fit relative"
             >
-              <video
+              <!-- <video
                 id="tedx-video"
                 poster="./assets/video-thumbnail.webp"
                 width="97%"
@@ -166,19 +166,83 @@
                 controls
               >
                 <source
-                  src="./assets/videos/promo.mp4"
+                  src="https://youtu.be/dze0-XJtEv0"
                   type="video/mp4"
                 />
 
                 sorry!, your browser does not support videos
-              </video>
+              </video> -->
+
+
+            <!-- <iframe id="tedx-video" width="97%" height="95%" src="https://www.youtube.com/embed/dze0-XJtEv0?rel=0&autoplay=1&mute=1" title="TEDxENCGF 2023 trailer" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="hidden cursor-pointer z-10 absolute top-2" ></iframe> -->
+
+            <div id="tedx-video" style="width: 97%; height: 95%" class="hidden cursor-pointer z-10 absolute top-2"></div>
+
               <img
                 width="97%"
                 id="tedx-video-thumbnail"
-                class="cursor-pointer absolute top-2"
+                class="cursor-pointer absolute top-2 z-10"
                 src="public/assets/video-thumbnail.webp"
                 alt="video thumbnail"
               />
+            <script async src="https://www.youtube.com/iframe_api"></script>
+            <script>
+
+
+            function onYouTubeIframeAPIReady() {
+              var player;
+              player = new YT.Player('tedx-video', {
+                videoId: 'dze0-XJtEv0', // YouTube Video ID          // Player height (in px)
+                playerVars: {
+                  rel: 0,
+                  autoplay: 1,        // Auto-play the video on load
+                  controls: 1,        // Show pause/play buttons in player
+                  showinfo: 0,        // Hide the video title
+                  modestbranding: 1,  // Hide the Youtube Logo
+                  loop: 1,            // Run the video in a loop
+                  fs: 0,              // Hide the full screen button
+                  cc_load_policy: 0, // Hide closed captions
+                  iv_load_policy: 3,  // Hide the Video Annotations
+                  autohide: 0         // Hide video controls when playing
+                },
+                events: {
+                  onReady: function(e) {
+
+
+            let tedxVideo = document.getElementById("tedx-video")
+            console.log(tedxVideo)
+            let tedxVideoThumb = document.getElementById("tedx-video-thumbnail")
+
+            tedxVideoThumb.addEventListener("click",()=>{
+                console.log("play video")
+                tedxVideoThumb.classList.add("hidden")
+                tedxVideo.classList.remove("hidden")
+                console.log(tedxVideo)
+
+                    e.target.mute();
+                    setTimeout(()=>{e.target.unMute()}, 1000)
+                // tedxVideo.play()
+
+                // setTimeout(()=>{
+
+                // console.log("clicking", document.querySelector(".ytp-cued-thumbnail-overlay"));
+                // document.querySelector(".ytp-cued-thumbnail-overlay").click();
+                // }, 2000)
+            })
+                    // e.target.unMute();
+                  }
+                }
+              });
+            }
+
+ 
+
+ // Written by @labnol 
+</script>
+
+<!-- <iframe id="tedx-video" width="97%" height="97%" src="https://player.vimeo.com/video/747666103?h=2c819739d8&autoplay=1"  class="hidden cursor-pointer z-10 absolute top-2" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/747666103">Electrolux &mdash; Break the pattern</a> from <a href="https://vimeo.com/natanael">Natanael Ericsson</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
             </div>
           </div>
         </div>

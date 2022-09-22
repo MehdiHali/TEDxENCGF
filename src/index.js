@@ -226,13 +226,3 @@ gsap.fromTo("#get-involved",{y:100, autoAlpha: 0},{scrollTrigger:{
 
 
 
-let tedxVideo = document.getElementById("tedx-video")
-let tedxVideoThumb = document.getElementById("tedx-video-thumbnail")
-
-tedxVideoThumb.addEventListener("click",()=>{
-    console.log("play video")
-    tedxVideoThumb.classList.add("hidden")
-    tedxVideo.classList.remove("hidden")
-    tedxVideo.play()
-})
-
