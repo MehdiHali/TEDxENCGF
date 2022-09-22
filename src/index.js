@@ -203,26 +203,13 @@ gsap.fromTo("#get-involved",{y:100, autoAlpha: 0},{scrollTrigger:{
   })
 
 
-// let scrollBtn = document.getElementById("scroll-btn")
-// let curr_section = 1;
+  let tedxVideo = document.getElementById("tedx-video")
+  console.log(tedxVideo)
+  let tedxVideoThumb = document.getElementById("tedx-video-thumbnail")
 
-
-// scrollBtn.addEventListener('click', ()=>{
-//     (curr_section == 5) ? curr_section = 1
-//    : curr_section++; 
-// gsap.to("#v-viewport", {duration: 1, scrollTo: {y:"#section-"+curr_section},ease:"power2.inOut"});
-    
-
-// })
-
-
-// section3_childs.forEach(child=>{
-//   section3_tl.from(child,{y:500, duration: 1, ease: "power2.inOut"},"-=1.5")
-// })
-// for (let i = 0; i < section3.; i++) {
-//   const element = array[i];
-  
-// }
-
-
-
+  tedxVideoThumb.addEventListener("click",()=>{
+      console.log("play video")
+      tedxVideoThumb.classList.add("hidden")
+      tedxVideo.classList.remove("hidden")
+      console.log(tedxVideo)
+  })
