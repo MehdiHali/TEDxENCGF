@@ -37,12 +37,14 @@
     <script type="module" src="/src/index.js"></script>
   </head>
   <body
-    style="min-height: 642px; max-height: 800px"
-    class="h-screen w-screen bg-white"
+    style="min-height: 642px; max-width: 2000px; "
+    class="h-screen w-screen bg-white mx-auto "
   >
     <div id="app" >
         <wc-header inside-class="xl:px-32 sticky lg:static top-0 " ></wc-header>
-      <section id="section-1" class="xl:px-32 section-1 lg:h-screen">
+        <div>
+
+      <section  id="section-1" class="xl:px-32 section-1 ">
         <!-- <wc-header ></wc-header> -->
 
         <div
@@ -51,7 +53,7 @@
         >
           <!-- LEFT -->
           <div
-            class="lg:w-11/12 order-2 lg:order-1 relative w-full overflow-hidden bg-transparent h-auto bg-gray-100 flex flex-col items-center justify-center p-10 min-h-fit"
+            class="lg:w-11/12 order-2 lg:order-1 relative w-full overflow-hidden bg-transparent h-auto bg-gray-100 flex flex-col items-center justify-center p-10 min-h-fit 2xl:space-y-12 "
           >
             <!-- BIG SVG -->
             <svg
@@ -82,14 +84,14 @@
             <div
               id="section1_slogan"
               style="color: #574b4b; letter-spacing: 5px;visibility: hidden;"
-              class="text-jomhuria text-9xl z-10 h-24"
+              class="text-jomhuria text-9xl text-15rem z-10 h-24"
             >
               Educate
             </div>
 
             <p
             id="section1_subtitle"
-              class="animate-slogan text-sm w-fit text-center inter-bold"
+              class="animate-slogan text-sm 2xl:text-xl w-fit text-center inter-bold"
               style="color: #574b4b"
             >
               Morocco, Fes. <br />
@@ -100,10 +102,10 @@
 
           <!-- Right -->
           <div
-            class="order-1 lg:order-2 w-full relative overflow-x-clip flex flex-col justify-between xl:max-w-lg"
+            class="order-1 lg:order-2 w-full relative overflow-x-clip flex flex-col justify-between "
           >
             <svg
-              class="absolute right-6 md:right-30 -top-80 md:-top-80 z-0"
+              class="absolute right-6  illustration-right md:right-30 2xl:right-44 -top-80 md:-top-80 z-0"
               xmlns="http://www.w3.org/2000/svg"
               width="700"
               height="800"
@@ -140,7 +142,7 @@
             <h1
               id="ted_slogan"
               style="line-height: 70%"
-              class="overflow-hidden text-4xl md:text-5xl pl-4 pb-6 z-10"
+              class="overflow-hidden text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl pl-4 pb-6 z-10"
             >
               <div id="ideas">Ideas</div>
               <br />
@@ -156,7 +158,7 @@
             </h1>
             <div
               style="padding-top: 56.25%"
-              class="bg-ted-red p-2 md:p-3 flex justify-center items-center z-10 min-h-fit relative "
+              class="bg-ted-red p-2 md:p-3 flex justify-center items-center z-10 min-h-fit relative"
             >
             <iframe id="tedx-video" width="97%" height="95%" src="https://www.youtube.com/embed/dze0-XJtEv0?rel=0&autoplay=0&controls=0" title="TEDxENCGF 2023 trailer" frameborder="0" allow="accelerometer; autoplay=0; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="hidden cursor-pointer z-10 absolute top-2" ></iframe>
 
@@ -172,6 +174,7 @@
           </div>
         </div>
       </section>
+      </div>
 
       <section
         id="section-2"
@@ -180,7 +183,7 @@
         <div class="">
           <div class="flex space-x-4 items-center w-full">
             <h1
-              class="text-ted-red whitespace-nowrap text-4xl inter-black px-4 pb-4 lg:pb-0"
+              class="text-ted-red whitespace-nowrap text-4xl 2xl:text-5xl inter-black px-4 pb-4 lg:pb-0"
             >
               Our core beliefs
             </h1>
@@ -198,7 +201,7 @@
               >
                 Educate
               </h1>
-              <p id="beliefs_educate_content" class="text-justify">
+              <p id="beliefs_educate_content" class="text-justify 2xl:text-2xl">
                 Life lessons are present everywhere, in everyone's ideas and
                 stories, to learn is simply to look and listen to others. We are
                 here to spread ideas worth sharing and educate our community in
@@ -212,7 +215,7 @@
               >
                 Act
               </h1>
-              <p id="beliefs_act_content" class="text-justify">
+              <p id="beliefs_act_content" class="text-justify 2xl:text-2xl">
                 Knowing what is right and doing what is required to make it a
                 reality are two entirely different things; as Mahatma Gandhi
                 once said: “Be the change you want to see in the world”. Taking
@@ -227,7 +230,7 @@
               >
                 Inspire
               </h1>
-              <p id="beliefs_inspire_content" class="text-justify">
+              <p id="beliefs_inspire_content" class="text-justify 2xl:text-2xl">
                 Spreading seeds grows the woods, to inspire the good is to share
                 good thoughts, one hand won’t clap, together we could make the
                 world a better place. Let your actions inspire others
@@ -263,7 +266,7 @@
             </svg>
             <p
               style="line-height: 150%; margin-top: 20px"
-              class="text-base  text-justify"
+              class="text-base  text-justify 2xl:text-2xl"
             >
               In the spirit of ideas worth spreading, TED created a program
               called TEDx. TEDx is a program of local, self-organized events
@@ -283,7 +286,7 @@
         class=" overflow-hidden flex flex-col justify-center items-center space-y-4 relative lg:bg-contain bg-cover "
       >
         <img
-          class="w-28 h-fit z-10"
+          class="w-28 2xl:w-40 h-fit z-10"
           src="./assets/LOGO.webp"
           alt="TEDxENCGF Logo"
         />
@@ -291,10 +294,10 @@
           <p class="text-2xl">2023 Edition</p>
         </div>
         <div class="h-24 z-10">
-          <h1 class="text-9xl text-jomhuria text-ted-red z-10">Passion</h1>
+          <h1 class="text-9xl text-jomhuria text-ted-red z-10 text-15rem">Passion</h1>
         </div>
-        <img class="w-24 h-fit" src="./assets/BIG_X.svg" alt="x illustration" />
-        <p class="text-center z-10">
+        <img class="w-24 2xl:w-40 h-fit" src="./assets/BIG_X.svg" alt="x illustration" />
+        <p class="text-center z-10 2xl:text-xl">
           March.04 <br />
           Morocco, Fes. <br />
           Ecole National de Commerce et <br />
@@ -373,7 +376,7 @@
 
             <div class="w-full flex flex-col items-center ml-form-embedContent" style=" ">
               
-                <h4 class="text-3xl text-center bg-gray-200 p-1 lg:w-fit w-full">Stay up to date with TEDxENCGF !</h4>
+                <h4 class="text-3xl text-center bg-gray-200 p-1 lg:w-fit w-full 2xl:text-5xl">Stay up to date with TEDxENCGF !</h4>
                 <p class="text-gray-900 bg-gray-200 p-1 w-full lg:w-fit text-center">Signup for latest news and updates.</p>
               
             </div>
@@ -415,7 +418,7 @@
 
               <div class="ml-form-embedSubmit">
                 
-                  <button type="submit" class="btn m-4 primary">Subscribe to our Newsletter</button>
+                  <button type="submit" class="btn m-4 primary">Subscribe to our <strong> Newsletter</strong></button>
                 
                 <button disabled="disabled" style="display: none;" type="button" class="loading">
                   <div class="ml-form-embedSubmitLoad"></div>
@@ -465,7 +468,7 @@
           <h1 class="text-4xl text-ted-red text-center inter-bold pb-8">
             Get Involved !
           </h1>
-          <p class="text-center max-w-xl text-gray-800 mb-8 bg-gray-200 p-1">
+          <p class="text-center max-w-xl text-gray-800 mb-8 bg-gray-200 p-1 2xl:text-2xl">
             Would you like to take part in the success of TEDxENCGF? Do you
             believe in the power of the word and in Moroccan Youth? If yes, do not hesitate to support our event in all means possible by
             contacting us now!
@@ -601,7 +604,7 @@
             </article>
             </div>
           </section> -->
-        <wc-footer></wc-footer>
+        <wc-footer class="w-full"></wc-footer>
       </section>
     </div>
   </body>

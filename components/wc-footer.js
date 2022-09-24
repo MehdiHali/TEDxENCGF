@@ -3,7 +3,7 @@ class wcFooter extends HTMLElement {
     constructor(){
         super();
         this.innerHTML = `
-          <footer style="max-width: 98vw;" class="flex flex-col items-center lg:flex-row justify-between lg:h-72 overflow-hidden w-screen bg-gray-100 lg:w-screen pt-8" >
+          <footer style="max-width: 98%;" class="flex flex-col items-center lg:flex-row justify-around lg:h-72 overflow-hidden bg-gray-100 pt-8 w-screen 2xl:w-full 2xl:px-52" >
             <!-- DIV 1 -->
           <div style="width: 30rem;min-width: 30rem;" class="flex text-center  relative mb-32 ">
             <div class="w-52 ml-8 flex-col text-center z-10 ">
@@ -62,8 +62,8 @@ class wcFooter extends HTMLElement {
     <li class="underline"><a  href="/team.html">Team</a></li>
     <li class="underline"><a  href="/contact.html">Contact</a></li>
   </ul>
-  <p>&copy ${new Date().getFullYear()} <a class="text-ted-red" href="/">TEDxENCGF</a> - All rights reserved.
-  <p>Developed with
+  <p class="2xl:text-xl">&copy ${new Date().getFullYear()} <a class="text-ted-red" href="/">TEDxENCGF</a> - All rights reserved.
+  <p class="2xl:text-xl">Developed with
 <svg class="inline-flex" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 143 131">
   <path fill="#ff0000" d="m71.5 131-10.367-9.423C24.31 88.237 0 66.178 0 39.264 0 17.204 17.303 0 39.325 0 51.766 0 63.706 5.783 71.5 14.849 79.293 5.783 91.234 0 103.675 0 125.697 0 143 17.205 143 39.264c0 26.914-24.31 48.974-61.132 82.313L71.5 131Z"/>
 </svg>
