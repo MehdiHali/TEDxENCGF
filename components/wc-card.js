@@ -6,7 +6,7 @@ return  el.hasAttribute(attr)?el.getAttribute(attr):def
 constructor(){
     super();
     this.innerHTML = `
-            <li style="background-color: black; " class=" relative h-60 sm:h-72 w-36 sm:w-48">
+            <li style="background-color: black; " class=" relative h-60 sm:h-72 w-36 sm:w-48 2xl:w-60 2xl:h-96">
             <!--
               <picture>
                 <source type="image/webp" srcset="${this.hasAttribute("src")?this.getAttribute('src').split(".")[0]+".webp":"/assets/team/person.svg"}" >

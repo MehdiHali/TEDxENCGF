@@ -134,12 +134,7 @@ color: #ff0000;
   @apply bg-gray-100 text-gray-700 focus:text-black p-4 text-center outline-none border border-gray-300 focus:border-gray-500 2xl:text-3xl 2xl:p-6;
 }
 
-@media only screen and (min-width: 1024px){
-    .section-1 {
-      min-height: 642px;
-    }
-    
-}
+
 
 @media only screen and (min-width: 1536px){
   .text-15rem  {
