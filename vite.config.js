@@ -12,7 +12,7 @@ export default defineConfig({
         partners: resolve(__dirname, 'partners.html'),
         about: resolve(__dirname, 'about.html'),
         contact: resolve(__dirname, 'contact.html'),
-        sitemap: resolve(__dirname, 'sitemap.xml'),
+        // sitemap: resolve(__dirname, 'sitemap.xml'),
         404: resolve(__dirname, '404.html'),
       }
     }
