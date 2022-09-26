@@ -16,12 +16,8 @@ constructor(){
               <a class=" ${window.location.pathname === '/about.html' && "active-link"} hover-text-ted-red  hover:scale-110" href="/about.html">About  <hr  class="absolute bottom-0 left-0 right-0 hidden border-0 border-b-2 border-ted-red origin-center   mx-auto"></a>
             </nav>
             <div class="hover-ted-text flex items-center space-x-4 w-32 justify-end">
-              <a class="${window.location.pathname === '/contact.html' && "active-link"} hover-text-ted-red z-10  2xl:text-2xl hover:scale-110 text-right md:text-xl lg:text-base" href="/contact.html">Contact </a>
-              <ul id="drop_menu" class="hidden flex flex-col items-center justify-center  bg-white fixed w-screen h-screen top-0 -left-4  z-50 m-0">
+              <ul id="drop_menu" class="hidden flex flex-col items-center justify-center  bg-white fixed w-3/5 h-screen top-0   z-50 m-0">
 
-                <button id="drop_menu_close_btn" class="absolute top-0 right-2 text-4xl p-4">
-<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z"/></svg>
-                    </button>
                     <img class="w-40 md:w-72 h-fit mb-10" src="/assets/LOGO.webp" alt="">
 
                     <a class="${location.pathname==='/' && "bg-ted-red text-white "} hover:text-white hover:bg-ted-red  w-full p-4 text-center md:text-4xl  border-b-2" href="/"> <li >Home</li></a>
@@ -29,9 +25,13 @@ constructor(){
                     <a class="${location.pathname==='/partners.html' && "bg-ted-red text-white "} hover:bg-ted-red hover:text-white  w-full p-4 text-center md:text-4xl  border-b-2" href="/partners.html"><li >Partners</li> </a>
                     <a class="${location.pathname==='/team.html' && "bg-ted-red text-white "} hover:bg-ted-red hover:text-white  w-full p-4 text-center md:text-4xl  border-b-2" href="/team.html"><li >Team</li></a>
                     <a class="${location.pathname==='/about.html' && "bg-ted-red text-white "} hover:bg-ted-red hover:text-white  w-full p-4 text-center md:text-4xl  border-b-2" href="/about.html"><li >About</li></a>
-
               </ul>
-              <img id="drop_menu_btn" class="cursor-pointer lg:hidden z-10 w-10 md:w-20 md:h-20 h-10" alt="menu button" src="./assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg">
+              <a class="${window.location.pathname === '/contact.html' && "active-link"} hover-text-ted-red z-50  2xl:text-2xl hover:scale-110 text-right md:text-xl lg:text-base" href="/contact.html">Contact </a>
+
+                <button id="drop_menu_btn" class=" text-4xl  drop-shadow-md z-50">
+              <img id="close_menu_btn" class="hidden cursor-pointer lg:hidden w-10 md:w-20 md:h-20 h-10 z-50" alt="menu button" src="/assets/icons/close_btn.svg">
+              <img id="open_menu_btn" class=" cursor-pointer lg:hidden w-10 md:w-20 md:h-20 h-10 " alt="menu button" src="./assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg">
+                    </button>
             </div>
           </header>
     `
@@ -40,22 +40,37 @@ constructor(){
 
 customElements.define("wc-header",wcHeader)
 
+window.localStorage.setItem("menu_is_open",false);
 
-let menu_btn = document.getElementById("drop_menu_btn"),
+let drop_menu_btn = document.getElementById("drop_menu_btn"),
 drop_menu = document.getElementById("drop_menu"),
-drop_menu_close_btn = document.getElementById("drop_menu_close_btn");
+open_menu_btn = document.getElementById("open_menu_btn"),
+close_menu_btn = document.getElementById("close_menu_btn");
 
+function toggleMenu(){
+  localStorage.setItem("menu_is_open",!(localStorage.getItem("menu_is_open")==="true"))
+  // console.log(localStorage.getItem("menu_is_open")==="true")
+  return localStorage.getItem("menu_is_open") === "true"
+}
 
-menu_btn.addEventListener("click",()=>{
+drop_menu_btn.addEventListener("click",()=>{
+  let menu_is_open = toggleMenu()
+  // console.log("menu is open", menu_is_open);
   drop_menu.classList.remove("hidden")
-  gsap.fromTo("#drop_menu",{x:200,autoAlpha:0},{x:0,autoAlpha:1,duration: 1, ease: "power2.inOut"})
+  open_menu_btn.classList.toggle("hidden")
+  close_menu_btn.classList.toggle("hidden")
+  gsap.fromTo(open_menu_btn,{x: -10},{x: 0, duration: 1, ease: "power2.inOut"})
+  gsap.fromTo(close_menu_btn,{rotate: 90},{rotate: 0, duration: 1, ease: "power2.inOut"})
+  menu_is_open 
+  ? gsap.fromTo("#drop_menu",{x:200,autoAlpha:0},{x:0,autoAlpha:1,duration: 1, ease: "power2.inOut"})
+  : gsap.to("#drop_menu",{x:200,autoAlpha: 0, duration:1 , ease:"power2.inOut"})
 })
 
 
-drop_menu_close_btn.addEventListener("click",()=>{
-  gsap.to("#drop_menu",{x:200,autoAlpha: 0, duration:1 , ease:"power2.inOut"})
-  // drop_menu.classList.add("hidden")
-})
+// drop_menu_close_btn.addEventListener("click",()=>{
+//   gsap.to("#drop_menu",{x:200,autoAlpha: 0, duration:1 , ease:"power2.inOut"})
+//   // drop_menu.classList.add("hidden")
+// })
 
 
 let header_nav_links = document.querySelectorAll("#header_nav a")
