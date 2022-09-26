@@ -28,7 +28,7 @@ class wcFooter extends HTMLElement {
           <!-- DIV 2 -->
 <div class="flex flex-col items-center space-y-4 p-4 w-full">
           <div>
-            <img class="w-44 h-fit" src="/assets/LOGO.webp" alt="">
+            <img class="w-44" src="/assets/LOGO.webp" alt="">
           </div>
 
   <div  id="footer_sm_links"  style="gap:1rem" class="flex items-center h-10">
