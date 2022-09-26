@@ -75,7 +75,7 @@ let global_tl = gsap.timeline();
 
 gsap.set("#section1_slogan",{visibility: "visible"})
 gsap.set("#section1_subtitle",{visibility: "visible"})
-global_tl.fromTo("#section1_bigx",{scale:30,rotate: 180,autoAlpha: 0},{scrollTrigger: {
+global_tl.fromTo("#section1_bigx",{scale:500,rotate: 180,autoAlpha: 0},{scrollTrigger: {
     trigger: "#section-1",
     pin: false,   // pin the trigger element while active
     start: "top bottom", // when the top of the trigger hits the top of the viewport
