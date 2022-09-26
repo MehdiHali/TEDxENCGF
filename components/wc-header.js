@@ -3,7 +3,7 @@ class wcHeader extends HTMLElement {
 constructor(){
     super();
     this.innerHTML = `
-          <header id="site_header" style="height: 15%;" class="2xl:text-2xl flex  z-50 items-center justify-between  ${this.getAttribute("inside-class")} ">
+          <header id="site_header" style="height: 15%;" class="2xl:text-2xl flex  z-50 items-center justify-between sticky top-0  ${this.getAttribute("inside-class")} ">
             <a class="z-10" href="/">
                 <img class="w-44 md:w-60 2xl:w-60 lg:w-40 py-4 px-4 lg:px-0 z-10" alt="logo" src="/assets/LOGO.webp">
             </a>
