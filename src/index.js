@@ -75,16 +75,7 @@ let global_tl = gsap.timeline();
 
 gsap.set("#section1_slogan",{visibility: "visible"})
 gsap.set("#section1_subtitle",{visibility: "visible"})
-global_tl.fromTo("#section1_bigx",{scale:300,rotate: 180,autoAlpha: 0},{scrollTrigger: {
-    trigger: "#section-1",
-    pin: false,   // pin the trigger element while active
-    start: "top bottom", // when the top of the trigger hits the top of the viewport
-    end: "60% 50%",
-    markers: false,
-    scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-},scale:1,rotation: 0,autoAlpha: 1, duration: 1, ease: "power2.inOut"},0)
-
-.add(beliefs_tl)
+global_tl.add(beliefs_tl)
 
 .fromTo("#what_is_tedx",{autoAlpha: 0, x: -100},{scrollTrigger:{
 trigger: "#what_is_tedx",
@@ -211,7 +202,7 @@ gsap.fromTo("#get-involved",{y:100, autoAlpha: 0},{scrollTrigger:{
   trigger: "#get-involved",
   pin: false,
   start: "top bottom",
-  end: "top top",
+  end: "top middle",
   scrub: 1,
   markers: false
 },y:0, autoAlpha: 1, duration: 1, ease: "power2.inOut"})

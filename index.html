@@ -178,7 +178,7 @@
 
       <section
         id="section-2"
-        class=" xl:px-32 lg:h-screen flex flex-col space-y-8 lg:py-4 min-h-fit overflow-hidden"
+        class=" xl:px-32 lg:h-fit flex flex-col space-y-8 lg:py-4 min-h-fit overflow-hidden"
       >
         <div class="">
           <div class="flex space-x-4 items-center w-full">
@@ -197,11 +197,11 @@
             <article id="educate_article" class="">
               <h1
                 id="beliefs_educate"
-                class="text-jomhuria text-ted-red text-9xl h-24"
+                class="text-jomhuria text-ted-red text-9xl h-24 2xl:px-8"
               >
                 Educate
               </h1>
-              <p id="beliefs_educate_content" class="text-justify 2xl:text-2xl">
+              <p id="beliefs_educate_content" class="text-lg text-justify 2xl:text-3xl 2xl:p-8">
                 Life lessons are present everywhere, in everyone's ideas and
                 stories, to learn is simply to look and listen to others. We are
                 here to spread ideas worth sharing and educate our community in
@@ -211,11 +211,11 @@
             <article id="act_article">
               <h1
                 id="beliefs_act"
-                class="text-jomhuria text-ted-red text-9xl h-24"
+                class="text-jomhuria text-ted-red text-9xl h-24 2xl:px-8"
               >
                 Act
               </h1>
-              <p id="beliefs_act_content" class="text-justify 2xl:text-2xl">
+              <p id="beliefs_act_content" class="text-lg text-justify 2xl:text-3xl 2xl:p-8">
                 Knowing what is right and doing what is required to make it a
                 reality are two entirely different things; as Mahatma Gandhi
                 once said: “Be the change you want to see in the world”. Taking
@@ -226,11 +226,11 @@
             <article id="inspire_article">
               <h1
                 id="beliefs_inspire"
-                class="text-jomhuria text-ted-red text-9xl h-24"
+                class="text-jomhuria text-ted-red text-9xl h-24 2xl:px-8"
               >
                 Inspire
               </h1>
-              <p id="beliefs_inspire_content" class="text-justify 2xl:text-2xl">
+              <p id="beliefs_inspire_content" class="text-lg text-justify 2xl:text-3xl 2xl:p-8">
                 Spreading seeds grows the woods, to inspire the good is to share
                 good thoughts, one hand won’t clap, together we could make the
                 world a better place. Let your actions inspire others
@@ -238,20 +238,20 @@
             </article>
           </div>
         </div>
-        <div  class="flex flex-wrap lg:flex-nowrap lg:h-64">
+<!-- 
+          <div
+          id="what_is_tedx"
+            class="w-full lg:h-fit bg-gray-100 p-8  flex items-center flex-wrap  s"
+          >
           <img
           id="tedx_img"
-            class="h-40 w-full lg:w-auto lg:h-full object-cover"
+            class="lg:w-1/4 object-cover flex-grow md:flex-grow-0"
             src="./assets/tedx-img.webp"
             alt="tedx-img"
           />
 
-          <div
-          id="what_is_tedx"
-            class="w-full bg-gray-100 p-8 pt-4 flex flex-col items-center justify-center space-y-10"
-          >
             <svg
-              class="mx-auto w-40"
+              class=" min-w-fit h-40"
               xmlns="http://www.w3.org/2000/svg"
               width="310"
               height="94"
@@ -259,13 +259,18 @@
               viewBox="0 0 310 94"
             >
               <path
-                class="draw-me"
+              width="310"
+              height="94"
+                class="draw-me h-40"
                 fill="#FF2B06"
                 d="M25.252 24.227H0V.181h78.235v24.046H52.996V94H25.252V24.227ZM82.55.18h75.947v24.047H110.31V35.92h48.187v22.346H110.31v11.689h48.2V94H82.55V.18Zm108.377 69.774h10.856c17.293 0 19.821-14.588 19.821-23.403 0-5.901-1.776-22.324-21.843-22.324h-8.834v45.727ZM163.166.18h45.556c30.029 0 40.642 23.128 40.642 46.772C249.364 75.737 234.726 94 203.3 94h-40.134V.18Zm126.086 57.666-8.465-14.623-8.259 14.623h-20.34l19.309-29.564L252.904 0h20.346l7.537 13.979L288.537 0h20.34L290.29 28.282l19.309 29.564h-20.347Z"
               />
-            </svg>
+            </svg> 
+            <div class="max-w-lg">
+
+            <h1 class="text-ted-red text-4xl">What is TEDx</h1>
             <p
-              style="line-height: 150%; margin-top: 20px"
+              style="line-height: 150%; "
               class="text-base  text-justify 2xl:text-2xl"
             >
               In the spirit of ideas worth spreading, TED created a program
@@ -276,8 +281,32 @@
               generous sponsors and volunteers along with hundreds of
               individuals dedicated to making the community a better place.
             </p>
+            </div>
+          </div> -->
+
+          <div class="py-8" id="what_is_tedx">
+          <img
+          id="tedx_img"
+            class="lg:w-1/3 mr-8 w-full  object-cover lg:float-left float-none "
+            src="./assets/tedx-img.webp"
+            alt="tedx-img"
+          />
+          <div class="px-8 text-center">
+            <h1 class="text-ted-red text-4xl font-bold text-center p-4">What is TEDx</h1>
+            <p
+              style="line-height: 150%; "
+              class="text-justify text-lg 2xl:text-3xl"
+            >
+              In the spirit of ideas worth spreading, TED created a program
+              called TEDx. TEDx is a program of local, self-organized events
+              that bring people together to share a TED-like experience. Our
+              event is called TEDxENCGF, where x = independently organized TED
+              event. The event is a gift to the community, made possible by
+              generous sponsors and volunteers along with hundreds of
+              individuals dedicated to making the community a better place.
+            </p>
           </div>
-        </div>
+          </div>
       </section>
 
       <section

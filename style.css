@@ -131,7 +131,7 @@ color: #ff0000;
 
 
 .input {
-  @apply bg-gray-100 text-gray-700 focus:text-black p-4 text-center outline-none border border-gray-300 focus:border-gray-500 2xl:text-3xl 2xl:p-6;
+  @apply bg-gray-100 text-gray-700 focus:text-black p-4 text-center outline-none border border-gray-300 focus:border-gray-500 2xl:text-3xl 2xl:p-6 2xl:w-full;
 }
 
 
