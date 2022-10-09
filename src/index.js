@@ -34,7 +34,7 @@ let beliefs_tl = new gsap.timeline({
       trigger: "#section-2",
       pin: false,   // pin the trigger element while active
       start: "top bottom", // when the top of the trigger hits the top of the viewport
-      end: "bottom 130%",
+      end: "top -90%",
       markers: false,
       scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
     }
