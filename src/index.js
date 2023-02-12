@@ -9,9 +9,9 @@ gsap.registerPlugin(ScrollTrigger,TextPlugin,ScrollToPlugin)
 let tl3 = new gsap.timeline({
     repeat: -1,
 })
-tl3.to("#section1_slogan", {duration: 1, text: "Act", ease: "power4.inOut"})
+tl3.to("#section1_slogan", {duration: 1, text: "Share", ease: "power4.inOut"})
 .to("#section1_slogan", {duration: 1, text: "Inspire", ease: "power4.inOut"},"+=0.9")
-.to("#section1_slogan", {duration: 1, text: "Educate", ease: "power4.inOut"},"+=0.9");
+.to("#section1_slogan", {duration: 1, text: "Live", ease: "power4.inOut"},"+=0.9");
 
 // tl.fromTo("#ideas", {y: 100,autoAlpha:0}, {y: 0,autoAlpha:1, duration: 1,ease: "power4.inOut"})
 // .fromTo("#worth", {y: 100,autoAlpha:0}, {y: 0,autoAlpha:1, duration: 1,ease: "power4.inOut" },'-=0.9')
