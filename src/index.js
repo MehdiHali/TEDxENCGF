@@ -69,6 +69,8 @@ section3_tl.fromTo("#section-3",{y: 0},{y:0, duration: 2, ease:"power3.inOut"},1
 .fromTo(section3_childs[4],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1)
 .fromTo(section3_childs[5],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1.1)
 .fromTo(section3_childs[6],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1.2)
+.fromTo(section3_childs[7],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1.2)
+.fromTo(section3_childs[8],{y: 500},{y:0, duration: 2, ease:"power3.inOut"},1.2)
 
 
 let global_tl = gsap.timeline();

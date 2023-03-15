@@ -9,7 +9,7 @@ constructor(){
             </a>
             <nav id="header_nav" class="hidden list-none space-x-12  lg:flex z-10">
               <a class=" ${window.location.pathname === '/' && "active-link"} hover-text-ted-red hover:scale-110" href="/">Home <hr  class=" absolute bottom-0 left-0 right-0 hidden border-0 border-b-2 border-ted-red origin-center   mx-auto"></a>
-              <a class=" ${window.location.pathname === '/edition.html' && "active-link"} hover-text-ted-red hover:scale-110" href="edition.html">Edition  <hr  class="absolute bottom-0 left-0 right-0 hidden border-0 border-b-2 border-ted-red origin-center   mx-auto"></a>
+              <a class=" ${window.location.pathname === '/edition.html' && "active-link"} hover-text-ted-red hover:scale-110" href="edition.html">2023's Edition  <hr  class="absolute bottom-0 left-0 right-0 hidden border-0 border-b-2 border-ted-red origin-center   mx-auto"></a>
               <a class=" ${window.location.pathname === '/partners.html' && "active-link"} hover-text-ted-red  hover:scale-110" href="/partners.html">Partners  <hr  class="absolute bottom-0 left-0 right-0 hidden border-0 border-b-2 border-ted-red origin-center   mx-auto"></a>
               <a class=" ${window.location.pathname === '/team.html' && "active-link"} hover-text-ted-red  hover:scale-110" href="/team.html">Team  <hr  class="absolute bottom-0 left-0 right-0 hidden border-0 border-b-2 border-ted-red origin-center   mx-auto"></a>
               <a class=" ${window.location.pathname === '/about.html' && "active-link"} hover-text-ted-red  hover:scale-110" href="/about.html">About  <hr  class="absolute bottom-0 left-0 right-0 hidden border-0 border-b-2 border-ted-red origin-center   mx-auto"></a>
