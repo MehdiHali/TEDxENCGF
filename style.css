@@ -122,7 +122,7 @@ color: #ff0000;
 }
 
 .btn {
-  @apply bg-ted-red text-white py-4 px-8 text-lg hover:bg-white hover-text-ted-red hover:border-2 border-red-500 2xl:text-2xl
+  @apply bg-ted-red text-white py-4  px-8 hover:bg-white hover-text-ted-red hover:border-2 border-red-500 2xl:text-2xl
 }
 
 .active-link {
